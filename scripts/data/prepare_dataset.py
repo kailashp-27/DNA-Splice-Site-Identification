@@ -9,8 +9,9 @@ import random
 import re
 import sys
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
+sys.path.insert(0, str(ROOT / "backend"))
 from ecosplice.sequence import (FLANK, CONTEXT_WIDTH, context_at, reverse_complement,
                                 local_motif_start, genomic_motif_start, transcript_boundaries)
 
@@ -253,8 +254,8 @@ def main():
     manifest = {"schema_version": 1, "dataset_id": "gencode49-grch38-chr22-v1", "seed": SEED, "assembly": "GRCh38 primary chromosome 22 (NC_000022.11); GENCODE v49 release GRCh38.p14", "sources": sources, "context": {"flank": FLANK, "width": CONTEXT_WIDTH, "motif_offset0": FLANK, "edge_policy": "Exclude incomplete windows", "unknown_policy": "Exclude windows containing N"}, "selection": {"gene_type": "protein_coding", "max_genes": args.max_genes, "genes": len(selected), "negative_sampling": "Per gene: min(200,max(20,4*eligible positives)) of each GT/AG kind, plus 100 ordinary positions; reservoirs sampled before window QC", "positive_labels": "Union of canonical exon-adjacency boundaries across transcripts", "negative_exclusion": "All chr22 GENCODE transcript boundaries on the analysed strand, including noncanonical boundaries"}, "split_policy": "70/15/15% of deterministically shuffled connected genomic gene-span groups; counts are not balanced by label", "groups": len(groups), "counts": {s: dict(Counter(r["label"] for r in rows if r["split"] == s)) for s in ("train", "validation", "test")}, "negative_counts": {s: dict(Counter(r["negative_kind"] for r in rows if r["split"] == s and r["label"] == "non_site")) for s in ("train", "validation", "test")}, "strand_counts": dict(Counter(r["strand"] for r in rows)), "excluded": dict(excluded), "audit": {"cross_split_genomic_overlap": 0, "duplicate_contexts_including_reverse_complements": 0, "misaligned_positive_motifs": 0, "all_classes_present_in_every_split": True}, "files": {name: digest_file(out / name) for name in ("windows.jsonl", "split_membership.json", "demo_samples.json")}, "limits": ["One chromosome and sampled negatives; not a genome-wide or clinical validation dataset.", "Overlapping intervals and duplicate windows are controlled; distant homologous genes may remain related.", "Sampled class balance differs from natural prevalence. Scores must not be called calibrated probabilities without evaluation.", "Noncanonical boundaries are excluded from positive scope; no intron pairing or variant effects.", "Demo examples belong to test groups. Do not tune models after inspecting their predictions."]}
     manifest["negative_pool_counts_before_sampling"] = dict(negative_pool_counts)
     manifest["preparation_code_sha256"] = {
-        "scripts/prepare_dataset.py": digest_file(Path(__file__)),
-        "ecosplice/sequence.py": digest_file(ROOT / "ecosplice" / "sequence.py"),
+        "scripts/data/prepare_dataset.py": digest_file(Path(__file__)),
+        "backend/ecosplice/sequence.py": digest_file(ROOT / "backend" / "ecosplice" / "sequence.py"),
     }
     manifest["dataset_fingerprint"] = hashlib.sha256(json.dumps(manifest, sort_keys=True).encode()).hexdigest()
     write_json(out / "manifest.json", manifest)

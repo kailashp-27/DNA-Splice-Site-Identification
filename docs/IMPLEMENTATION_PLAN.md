@@ -10,7 +10,7 @@ Updated: 6 October 2026. Preserve the green React UI. Local use only; no public 
 | 4. React integration and measured comparisons | Genuine outputs on every page, stale-request protection, runtime benchmarks, quality trade-offs, explicit energy assumptions, responsive QA | Pending |
 | 5. Local release and submission | Maximum-input and full-workflow tests, cleanup, dependency setup, one launch command, offline check, architecture/report/slides/demo/viva notes | Pending |
 
-These are sequential implementation parts, not separate Codex chats. The detailed acceptance criteria remain in PROJECT_HANDOVER.md.
+These are sequential implementation parts, not separate Codex chats. The detailed acceptance criteria remain in [PROJECT_HANDOVER.md](../PROJECT_HANDOVER.md). See [PROJECT_STRUCTURE.md](PROJECT_STRUCTURE.md) for current file locations.
 
 ## Part 1 choices
 
@@ -26,9 +26,9 @@ These are sequential implementation parts, not separate Codex chats. The detaile
 ## Reproduction
 
 ```powershell
-python scripts/download_reference.py
-python scripts/prepare_dataset.py
-python -m unittest discover -s tests -p "test_*.py" -v
+python scripts/data/download_reference.py
+python scripts/data/prepare_dataset.py
+python -m unittest discover -s backend/tests -p "test_*.py" -v
 ```
 
 The download command needs internet once. Preparation and checks use only Python's standard library and the cached sources.
@@ -45,4 +45,4 @@ Prepared 400 genes across 304 genomic groups, producing 134,603 unique windows:
 
 Four held-out demo files are in `data/demo`, with annotation metadata in `data/processed/demo_samples.json`. The existing React upload utilities preserve their labelled motif positions. Ten Python tests and seven JavaScript tests passed. No prediction model or accuracy claim is part of this foundation.
 
-An independent offline preparation into `qa/dataset-reproduction` matched the full manifest and all three derived-file hashes exactly. Verification evidence is saved in `data/processed/verification.json`. Next is Part 2; train only on the frozen training split and tune thresholds/routing only on validation.
+An independent offline preparation, now stored in `qa/experiments/dataset-reproduction`, matched the full manifest and all three derived-file hashes exactly. Verification evidence is saved in `data/processed/verification.json`. Current scripts are in `scripts/data/`; source reorganisation changes preparation-code provenance in newly generated manifests while retaining identical derived-data hashes. The frozen dataset remains unchanged. Next is Part 2; train only on the frozen training split and tune thresholds/routing only on validation.

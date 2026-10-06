@@ -8,7 +8,7 @@ import subprocess
 import urllib.request
 from urllib.parse import urlparse
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 RAW = ROOT / "data" / "raw"
 RELEASE = "https://www.gencodegenes.org/human/release_49.html"
 GENOME = "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/chromosomes/chr22.fa.gz"

@@ -4,19 +4,27 @@ Updated: 6 October 2026. This file records the current state and proposed implem
 
 ## Current continuation: five-part implementation
 
-The user's remaining work is grouped into five parts in [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md). Part 1 is the real dataset and coordinate foundation; model training is Part 2. Preserve the existing green interface and local-only scope.
+The user's remaining work is grouped into five parts in [IMPLEMENTATION_PLAN.md](docs/IMPLEMENTATION_PLAN.md). Part 1 is the real dataset and coordinate foundation; model training is Part 2. Preserve the existing green interface and local-only scope.
+
+### Folder organisation: 6 October 2026
+
+Source files now live in `frontend/` and `backend/`, their tests live alongside them, data utilities live in `scripts/data/`, and the detailed plan lives in `docs/`. Root npm commands and `start-dashboard.cmd` continue to work. QA screenshots and experiment outputs are grouped under `qa/screenshots/` and `qa/experiments/`. Read [docs/PROJECT_STRUCTURE.md](docs/PROJECT_STRUCTURE.md) for the map and future file locations.
+
+The frozen scientific artifacts were not rewritten during organisation. Their manifest retains the original preparation-code identities from Git commit `fadf3c6`; moving and updating current script paths changes the current code hash, not the saved dataset identity. Reproduction with the reorganised scripts should match the three derived-data file hashes; the new manifest records the current preparation code and therefore has a different fingerprint.
+
+Organisation verification passed: seven JavaScript tests, ten Python tests, production build, all three regenerated dataset hashes, and byte-for-byte preservation of the frozen scientific artifacts. Local evidence is saved in `qa/experiments/reorganization-verification.json`. Part 2 has not started.
 
 ### Part 1 implemented on 6 October 2026
 
-- Added `ecosplice/sequence.py`: strict DNA/FASTA parsing and the shared 102-base context/coordinate contract, plus strand-aware boundary extraction and coordinate mapping.
-- Added `scripts/download_reference.py`: frozen GENCODE human v49 annotation and UCSC GRCh38 chr22 DNA, with cached source checksums. Small verified HTTPS ranges recover stalled annotation transfers. Raw cache totals about 106 MB and is ignored by Git.
-- Added `scripts/prepare_dataset.py`: deterministic selection of 400 protein-coding genes, exon-adjacency labels, both strand orientations, GT/AG hard negatives and ordinary negatives. All comprehensive chr22 transcript boundaries protect the negative pool, including noncanonical annotations.
+- Added `backend/ecosplice/sequence.py`: strict DNA/FASTA parsing and the shared 102-base context/coordinate contract, plus strand-aware boundary extraction and coordinate mapping.
+- Added `scripts/data/download_reference.py`: frozen GENCODE human v49 annotation and UCSC GRCh38 chr22 DNA, with cached source checksums. Small verified HTTPS ranges recover stalled annotation transfers. Raw cache totals about 106 MB and is ignored by Git.
+- Added `scripts/data/prepare_dataset.py`: deterministic selection of 400 protein-coding genes, exon-adjacency labels, both strand orientations, GT/AG hard negatives and ordinary negatives. All comprehensive chr22 transcript boundaries protect the negative pool, including noncanonical annotations.
 - Prepared **134,603** unique labelled 102-base windows across **304** non-overlapping genomic groups. Frozen counts: train 93,231; validation 20,153; test 21,219. Every split contains donor, acceptor and non-site labels.
 - Excluded 134 noncanonical boundary occurrences, 1,119 duplicate-context rows and 12 conflicting-label context rows. These counts describe this selected subset, not all human annotations.
 - Saved class counts, membership, source hashes, preprocessing-code hashes, derived-file hashes and audit results in `data/processed/manifest.json` and `split_membership.json`. Dataset fingerprint: `a884895b613c8923e41e1830c2d475377071272848f2fb4c9f24335f936c5464`.
 - Saved four genuine, held-out FASTA demos in `data/demo`: TBC1D22A and NUP50 (+ strand), ARVCF and SF3A1 (- strand, already reverse-complemented for upload). Annotation labels and provenance are in `data/processed/demo_samples.json`.
 - Ten Python tests and seven JavaScript tests passed, including matching every retained window to the raw reference on its strand, no cross-split window overlap/duplicates, motif alignment and the real FASTA-to-React-utility coordinate flow.
-- Independent offline regeneration into `qa/dataset-reproduction` matched the full manifest and every recorded derived-file hash exactly. Evidence is saved in `data/processed/verification.json`. Part 1 is complete; dashboard/model integration remains in later parts.
+- Independent offline regeneration, now located in `qa/experiments/dataset-reproduction`, matched the full manifest and every recorded derived-file hash exactly. Evidence is saved in `data/processed/verification.json`. Part 1 is complete; dashboard/model integration remains in later parts.
 
 Read [docs/DATASET_AND_COORDINATES.md](docs/DATASET_AND_COORDINATES.md) before implementing models. The dataset uses sampled negatives and one chromosome; it is not genome-wide validation. Full 102-base A/C/G/T windows are required for scoring. N-containing and edge windows must retain an unavailable-score reason when integrated.
 
@@ -52,14 +60,17 @@ Removed the "DAA project / Local research workspace" card, placeholder KP avatar
 
 | File | Responsibility |
 | --- | --- |
-| `src/App.jsx` | Application state, navigation, sample loading, downloads, report data |
-| `src/workspace.jsx` | Sequence map, DNA viewer, linked table/inspector, input bar and workflow |
-| `src/pages.jsx` | QC, evaluation, comparison, reports, help, input dialog |
-| `src/data.js` | Synthetic sequences, fixture scores, fixture validation records |
-| `src/lib/analysis.js` | FASTA parser, QC, motif scanning, metrics, energy arithmetic, CSV |
-| `src/components.jsx` | Shared components; includes some legacy unused components |
-| `src/styles.css`, `src/redesign.css` | Original CSS plus redesign overrides |
-| `tests/analysis.test.js` | Six current utility tests |
+| `frontend/src/App.jsx` | Application state, navigation, sample loading, downloads, report data |
+| `frontend/src/workspace.jsx` | Sequence map, DNA viewer, linked table/inspector, input bar and workflow |
+| `frontend/src/pages.jsx` | QC, evaluation, comparison, reports, help, input dialog |
+| `frontend/src/data.js` | Synthetic sequences, fixture scores, fixture validation records |
+| `frontend/src/lib/analysis.js` | FASTA parser, QC, motif scanning, metrics, energy arithmetic, CSV |
+| `frontend/src/components.jsx` | Shared components; includes some legacy unused components |
+| `frontend/src/styles.css`, `frontend/src/redesign.css` | Original CSS plus redesign overrides |
+| `frontend/tests/` | Six utility tests plus real FASTA coordinate-flow test |
+| `backend/ecosplice/sequence.py` | Python input, window and strand/coordinate contract |
+| `backend/tests/` | Ten coordinate, isolation and real reference-data tests |
+| `scripts/data/` | Reference download and deterministic dataset preparation |
 | `README.md` | Current setup, scope, limitations |
 | `start-dashboard.cmd` | Current frontend launcher |
 
@@ -71,7 +82,8 @@ The system npm command previously pointed to a broken roaming installation. Work
 
 ```powershell
 node node_modules/vite/bin/vite.js --host 127.0.0.1
-node --test tests/analysis.test.js
+node --test frontend/tests/analysis.test.js frontend/tests/real-samples.test.js
+python -m unittest discover -s backend/tests -p "test_*.py" -v
 node node_modules/vite/bin/vite.js build
 node 'C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js' run dev
 ```

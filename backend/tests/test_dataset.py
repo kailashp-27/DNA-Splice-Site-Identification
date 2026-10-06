@@ -2,12 +2,15 @@
 from pathlib import Path
 import json
 import unittest
+import sys
+
+ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT))
+sys.path.insert(0, str(ROOT / "backend"))
 
 from ecosplice.sequence import (context_at, genomic_motif_start, local_motif_start,
                                 parse_sequence, reverse_complement, transcript_boundaries)
-from scripts.prepare_dataset import assign_groups, audit_rows
-
-ROOT = Path(__file__).resolve().parents[1]
+from scripts.data.prepare_dataset import assign_groups, audit_rows
 
 
 class CoordinateTests(unittest.TestCase):
@@ -69,7 +72,7 @@ class CoordinateTests(unittest.TestCase):
 class RealDatasetTests(unittest.TestCase):
     @unittest.skipUnless((ROOT / "data/raw/chr22.fa.gz").exists(), "Reference cache is optional in packaged release")
     def test_windows_match_reference_on_both_strands(self):
-        from scripts.prepare_dataset import read_genome
+        from scripts.data.prepare_dataset import read_genome
         genome = read_genome(ROOT / "data/raw/chr22.fa.gz")
         with (ROOT / "data/processed/windows.jsonl").open(encoding="utf-8") as source:
             for line in source:
@@ -85,7 +88,7 @@ class RealDatasetTests(unittest.TestCase):
         audit_rows(rows)
         manifest = json.loads((ROOT / "data/processed/manifest.json").read_text())
         self.assertEqual(sum(sum(c.values()) for c in manifest["counts"].values()), len(rows))
-        from scripts.prepare_dataset import digest_file
+        from scripts.data.prepare_dataset import digest_file
         for filename, checksum in manifest["files"].items():
             self.assertEqual(digest_file(ROOT / "data/processed" / filename), checksum)
 

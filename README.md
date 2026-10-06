@@ -4,17 +4,33 @@ A React dashboard for the first software demonstration of **Energy-Optimized DNA
 
 ## Completion work
 
-The remaining work is organised into five parts in [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md): dataset/coordinates; models/algorithms; backend/history; UI/measurements; release/submission.
+The remaining work is organised into five parts in [IMPLEMENTATION_PLAN.md](docs/IMPLEMENTATION_PLAN.md): dataset/coordinates; models/algorithms; backend/history; UI/measurements; release/submission.
 
 Part 1 adds Python data preparation alongside the existing React interface. Its source selection, window rules, coordinate mapping and leakage controls are documented in [docs/DATASET_AND_COORDINATES.md](docs/DATASET_AND_COORDINATES.md). These utilities do not yet add model scores to the dashboard.
 
 ```powershell
-python scripts/download_reference.py
-python scripts/prepare_dataset.py
-python -m unittest discover -s tests -p "test_*.py" -v
+python scripts/data/download_reference.py
+python scripts/data/prepare_dataset.py
+python -m unittest discover -s backend/tests -p "test_*.py" -v
 ```
 
 Use Python 3.12. The data scripts require no third-party Python packages. Downloading the frozen GENCODE v49 annotation and GRCh38 chromosome 22 requires internet once; preparation uses cached files. Windows' bundled curl is used for robust downloads when available. Generated real FASTA examples live in `data/demo`; the current upload flow can scan their motifs without inventing prediction scores. Ground-truth labels and genomic provenance are stored separately in `data/processed/demo_samples.json`.
+
+## Project folders
+
+```text
+frontend/             React source, public assets, HTML entry, JavaScript tests
+backend/              Python analysis package and Python tests
+scripts/data/         Reference downloads and dataset preparation
+data/demo/            Real FASTA examples for offline demonstrations
+data/processed/       Frozen labelled dataset, manifests and verification
+data/raw/             Download cache (local only)
+docs/                 Implementation plan, methods and folder guide
+qa/screenshots/       Interface evidence (local only)
+qa/experiments/       Regeneration and QA outputs (local only)
+```
+
+Run commands from the project root. `README.md` is the setup guide; `PROJECT_HANDOVER.md` is the continuation guide. Root npm/Vite configuration and `start-dashboard.cmd` launch the interface in `frontend/`. `node_modules/` and `dist/` are generated folders. See [PROJECT_STRUCTURE.md](docs/PROJECT_STRUCTURE.md) for where to put future work.
 
 ## Run locally
 
@@ -65,10 +81,11 @@ Sequences are held in browser memory for the current session. The application do
 
 ```powershell
 npm test
+npm run test:backend
 npm run build
 npm run preview
 ```
 
-The analysis utilities are in `src/lib/analysis.js`; synthetic fixtures are in `src/data.js`. A later Python prediction service can replace the fixtures with model inference and measured runtime, keeping the React interface. See [PROJECT_HANDOVER.md](PROJECT_HANDOVER.md) for the verified current state, detailed completion plan, and a continuation prompt for a new chat.
+The browser analysis utilities are in `frontend/src/lib/analysis.js`; synthetic fixtures are in `frontend/src/data.js`. Python utilities are in `backend/ecosplice/`. A later Python prediction service can replace the fixtures with model inference and measured runtime, keeping the React interface. See [PROJECT_HANDOVER.md](PROJECT_HANDOVER.md) for the verified current state, detailed completion plan, and a continuation prompt for a new chat.
 
 Biology references: [NHGRI intron explanation](https://www.genome.gov/genetics-glossary/Intron) and [Illumina SpliceAI](https://github.com/Illumina/SpliceAI).

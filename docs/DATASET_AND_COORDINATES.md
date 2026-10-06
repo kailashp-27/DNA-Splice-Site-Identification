@@ -63,9 +63,9 @@ Fit models and encoders on train only. Select thresholds and routing rules on va
 ## Commands
 
 ```powershell
-python scripts/download_reference.py
-python scripts/prepare_dataset.py
-python -m unittest discover -s tests -p "test_*.py" -v
+python scripts/data/download_reference.py
+python scripts/data/prepare_dataset.py
+python -m unittest discover -s backend/tests -p "test_*.py" -v
 ```
 
 The data scripts require Python 3.12 and no third-party packages. To verify deterministic regeneration, prepare again into a different folder and compare the manifest's file hashes. Source caches are excluded from Git; derived data and demo files are intended release artifacts. No trained model or accuracy figure is supplied by this part.
@@ -85,3 +85,5 @@ Preparation excluded 134 noncanonical boundary occurrences, 1,119 duplicate cont
 The four held-out examples are TBC1D22A (1,484 bases, +), NUP50 (1,624 bases, +), ARVCF (2,402 bases, -) and SF3A1 (2,402 bases, -). Minus-strand FASTA exports already follow the analysed strand. The files contain respectively 2, 5, 7 and 5 annotated canonical boundaries; some near their crop edges are deliberately marked unscoreable in the metadata. These annotation counts are not prediction or accuracy results.
 
 Ten Python tests and seven JavaScript tests passed. An independent offline regeneration matched the complete manifest and all recorded output hashes, as recorded in `data/processed/verification.json`. Dataset fingerprint: `a884895b613c8923e41e1830c2d475377071272848f2fb4c9f24335f936c5464`.
+
+Folder organisation preserves these frozen artifacts. Their original source paths and code hashes refer to commit `fadf3c6`, which retains the original preparation implementation. The current utilities are in `scripts/data/` and the Python package is in `backend/ecosplice/`. Regeneration with current paths should match the derived-file hashes; its manifest records the relocated current source and has a new preparation fingerprint. Do not overwrite historical provenance merely to make it match newer source files.
