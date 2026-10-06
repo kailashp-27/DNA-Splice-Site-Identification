@@ -1,0 +1,111 @@
+{
+  "assembly": "GRCh38 primary chromosome 22 (NC_000022.11); GENCODE v49 release GRCh38.p14",
+  "audit": {
+    "all_classes_present_in_every_split": true,
+    "cross_split_genomic_overlap": 0,
+    "duplicate_contexts_including_reverse_complements": 0,
+    "misaligned_positive_motifs": 0
+  },
+  "context": {
+    "edge_policy": "Exclude incomplete windows",
+    "flank": 50,
+    "motif_offset0": 50,
+    "unknown_policy": "Exclude windows containing N",
+    "width": 102
+  },
+  "counts": {
+    "test": {
+      "acceptor": 918,
+      "donor": 900,
+      "non_site": 19401
+    },
+    "train": {
+      "acceptor": 3811,
+      "donor": 3654,
+      "non_site": 85766
+    },
+    "validation": {
+      "acceptor": 821,
+      "donor": 858,
+      "non_site": 18474
+    }
+  },
+  "dataset_fingerprint": "a884895b613c8923e41e1830c2d475377071272848f2fb4c9f24335f936c5464",
+  "dataset_id": "gencode49-grch38-chr22-v1",
+  "excluded": {
+    "conflicting_context_rows": 12,
+    "duplicate_context_rows": 1119,
+    "noncanonical_boundary": 134
+  },
+  "files": {
+    "demo_samples.json": "ad2b8430f0745b6ee6f1f1d22cab5785e1cb976e3cb647090654fe9d98aab17e",
+    "split_membership.json": "1ea151a953c674c907cc57822c93b301975e8164a46dedbbc6a4cd903c5174bc",
+    "windows.jsonl": "150eae1571670821d6d725a6d6806f76d05d1b9f840b4c1baea05444f026ed08"
+  },
+  "groups": 304,
+  "limits": [
+    "One chromosome and sampled negatives; not a genome-wide or clinical validation dataset.",
+    "Overlapping intervals and duplicate windows are controlled; distant homologous genes may remain related.",
+    "Sampled class balance differs from natural prevalence. Scores must not be called calibrated probabilities without evaluation.",
+    "Noncanonical boundaries are excluded from positive scope; no intron pairing or variant effects.",
+    "Demo examples belong to test groups. Do not tune models after inspecting their predictions."
+  ],
+  "negative_counts": {
+    "test": {
+      "acceptor_motif": 6605,
+      "donor_motif": 6597,
+      "ordinary": 6199
+    },
+    "train": {
+      "acceptor_motif": 28845,
+      "donor_motif": 28745,
+      "ordinary": 28176
+    },
+    "validation": {
+      "acceptor_motif": 6451,
+      "donor_motif": 6429,
+      "ordinary": 5594
+    }
+  },
+  "negative_pool_counts_before_sampling": {
+    "acceptor_motif": 1410883,
+    "donor_motif": 1047045,
+    "ordinary": 16496303
+  },
+  "preparation_code_sha256": {
+    "ecosplice/sequence.py": "76d88f221245b589aa1fa411b832e79c6bf8ce44d11542557bac8e81aa30817a",
+    "scripts/prepare_dataset.py": "8835fdd70b22ace3c73eeb6328f86ac6020f7e261b643e4e2a3c35845e2ffb7c"
+  },
+  "schema_version": 1,
+  "seed": 20261006,
+  "selection": {
+    "gene_type": "protein_coding",
+    "genes": 400,
+    "max_genes": 400,
+    "negative_exclusion": "All chr22 GENCODE transcript boundaries on the analysed strand, including noncanonical boundaries",
+    "negative_sampling": "Per gene: min(200,max(20,4*eligible positives)) of each GT/AG kind, plus 100 ordinary positions; reservoirs sampled before window QC",
+    "positive_labels": "Union of canonical exon-adjacency boundaries across transcripts"
+  },
+  "sources": {
+    "files": [
+      {
+        "bytes": 93374019,
+        "file": "gencode.v49.annotation.gtf.gz",
+        "sha256": "d6e6fe0515c95b2a8cd36a853c1989cee9115c736c60237c56ae92b9daaaf7c4",
+        "url": "https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_49/gencode.v49.annotation.gtf.gz"
+      },
+      {
+        "bytes": 12255678,
+        "file": "chr22.fa.gz",
+        "sha256": "05f9d97d6fbfd08a44ca45b50837ca2ae9c471f35ba79dffec04d2cb5eaaf695",
+        "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg38/chromosomes/chr22.fa.gz"
+      }
+    ],
+    "release_page": "https://www.gencodegenes.org/human/release_49.html"
+  },
+  "split_policy": "70/15/15% of deterministically shuffled connected genomic gene-span groups; counts are not balanced by label",
+  "strand_counts": {
+    "+": 68608,
+    "-": 65995
+  }
+}

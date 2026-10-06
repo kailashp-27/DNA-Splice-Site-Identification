@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-06",
+  "dataset_fingerprint": "a884895b613c8923e41e1830c2d475377071272848f2fb4c9f24335f936c5464",
+  "independent_regeneration_identical": true,
+  "matching_files": {
+    "demo_samples.json": "ad2b8430f0745b6ee6f1f1d22cab5785e1cb976e3cb647090654fe9d98aab17e",
+    "split_membership.json": "1ea151a953c674c907cc57822c93b301975e8164a46dedbbc6a4cd903c5174bc",
+    "windows.jsonl": "150eae1571670821d6d725a6d6806f76d05d1b9f840b4c1baea05444f026ed08"
+  },
+  "python_tests_passed": 10,
+  "javascript_tests_passed": 7,
+  "audit": {
+    "all_classes_present_in_every_split": true,
+    "cross_split_genomic_overlap": 0,
+    "duplicate_contexts_including_reverse_complements": 0,
+    "misaligned_positive_motifs": 0
+  }
+}

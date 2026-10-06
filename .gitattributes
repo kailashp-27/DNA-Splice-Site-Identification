@@ -1,0 +1,5 @@
+* text=auto eol=lf
+
+# Scientific artifacts have recorded byte-level hashes; preserve their exact bytes.
+data/processed/** -text
+data/demo/** -text

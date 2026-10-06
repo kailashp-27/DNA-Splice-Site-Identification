@@ -1,0 +1,3602 @@
+[
+  {
+    "group_id": "G-d6b2e4483012",
+    "id": "ENSG00000008735.15",
+    "name": "MAPK8IP2",
+    "region_end0": 50614031,
+    "region_start0": 50600626,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-d9306b290a22",
+    "id": "ENSG00000015475.20",
+    "name": "BID",
+    "region_end0": 17774820,
+    "region_start0": 17734087,
+    "split": "validation",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-a9a099e6a9e0",
+    "id": "ENSG00000025708.15",
+    "name": "TYMP",
+    "region_end0": 50530376,
+    "region_start0": 50525701,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-a9a099e6a9e0",
+    "id": "ENSG00000025770.20",
+    "name": "NCAPH2",
+    "region_end0": 50524830,
+    "region_start0": 50508162,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-ab9b0286feed",
+    "id": "ENSG00000040608.14",
+    "name": "RTN4R",
+    "region_end0": 20283296,
+    "region_start0": 20241364,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-6027b9365e95",
+    "id": "ENSG00000054611.15",
+    "name": "TBC1D22A",
+    "region_end0": 47175749,
+    "region_start0": 46762566,
+    "split": "test",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-54b3567870aa",
+    "id": "ENSG00000056487.18",
+    "name": "PHF21B",
+    "region_end0": 45010072,
+    "region_start0": 44881111,
+    "split": "validation",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-aee8b700a9f0",
+    "id": "ENSG00000063515.3",
+    "name": "GSC2",
+    "region_end0": 19150342,
+    "region_start0": 19146942,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-ceafccd00c17",
+    "id": "ENSG00000069998.13",
+    "name": "HDHD5",
+    "region_end0": 17165337,
+    "region_start0": 17137459,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-2490c9b70286",
+    "id": "ENSG00000070010.20",
+    "name": "UFD1",
+    "region_end0": 19479265,
+    "region_start0": 19449860,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-15ec94cef1aa",
+    "id": "ENSG00000070371.17",
+    "name": "CLTCL1",
+    "region_end0": 19291824,
+    "region_start0": 19179269,
+    "split": "validation",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-89467faf796d",
+    "id": "ENSG00000070413.22",
+    "name": "DGCR2",
+    "region_end0": 19122511,
+    "region_start0": 19036229,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-e084a4a233a7",
+    "id": "ENSG00000073146.17",
+    "name": "MOV10L1",
+    "region_end0": 50161740,
+    "region_start0": 50089955,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-a1f7e6a55555",
+    "id": "ENSG00000073150.14",
+    "name": "PANX2",
+    "region_end0": 50180345,
+    "region_start0": 50170680,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-6eeeeb029b1f",
+    "id": "ENSG00000073169.15",
+    "name": "SELENOO",
+    "region_end0": 50217666,
+    "region_start0": 50200960,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-74f56d2a2a3d",
+    "id": "ENSG00000075218.20",
+    "name": "GTSE1",
+    "region_end0": 46330860,
+    "region_start0": 46296819,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-dde622b409ff",
+    "id": "ENSG00000075234.18",
+    "name": "TTC38",
+    "region_end0": 46295147,
+    "region_start0": 46267910,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-bf6efcfc79fb",
+    "id": "ENSG00000075240.18",
+    "name": "GRAMD4",
+    "region_end0": 46679840,
+    "region_start0": 46575593,
+    "split": "validation",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-415119147d0c",
+    "id": "ENSG00000075275.18",
+    "name": "CELSR1",
+    "region_end0": 46537670,
+    "region_start0": 46360783,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-087ce11384cb",
+    "id": "ENSG00000077935.18",
+    "name": "SMC1B",
+    "region_end0": 45413669,
+    "region_start0": 45344012,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-7426e152451e",
+    "id": "ENSG00000077942.20",
+    "name": "FBLN1",
+    "region_end0": 45602031,
+    "region_start0": 45502187,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-3812b98ea381",
+    "id": "ENSG00000079974.20",
+    "name": "RABL2B",
+    "region_end0": 50783810,
+    "region_start0": 50767440,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-2adb73b880ab",
+    "id": "ENSG00000093000.20",
+    "name": "NUP50",
+    "region_end0": 45188067,
+    "region_start0": 45163874,
+    "split": "test",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-77938f45228f",
+    "id": "ENSG00000093009.12",
+    "name": "CDC45",
+    "region_end0": 19520662,
+    "region_start0": 19479406,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-badb896d274e",
+    "id": "ENSG00000093010.16",
+    "name": "COMT",
+    "region_end0": 19970025,
+    "region_start0": 19941320,
+    "split": "test",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-2d239e775cd9",
+    "id": "ENSG00000093072.20",
+    "name": "ADA2",
+    "region_end0": 17258285,
+    "region_start0": 17178739,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-badb896d274e",
+    "id": "ENSG00000099889.15",
+    "name": "ARVCF",
+    "region_end0": 20016873,
+    "region_start0": 19969841,
+    "split": "test",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-f692cc08cdd9",
+    "id": "ENSG00000099899.17",
+    "name": "TRMT2A",
+    "region_end0": 20117442,
+    "region_start0": 20111824,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-f692cc08cdd9",
+    "id": "ENSG00000099901.19",
+    "name": "RANBP1",
+    "region_end0": 20127405,
+    "region_start0": 20115826,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-79f91c9bf7b5",
+    "id": "ENSG00000099904.17",
+    "name": "ZDHHC8",
+    "region_end0": 20148057,
+    "region_start0": 20129405,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-84acb12b1d5e",
+    "id": "ENSG00000099910.18",
+    "name": "KLHL22",
+    "region_end0": 20496943,
+    "region_start0": 20441468,
+    "split": "validation",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-84acb12b1d5e",
+    "id": "ENSG00000099917.18",
+    "name": "MED15",
+    "region_end0": 20587682,
+    "region_start0": 20495862,
+    "split": "validation",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-4025c3460e22",
+    "id": "ENSG00000099937.12",
+    "name": "SERPIND1",
+    "region_end0": 20787771,
+    "region_start0": 20774061,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-4025c3460e22",
+    "id": "ENSG00000099940.13",
+    "name": "SNAP29",
+    "region_end0": 20891264,
+    "region_start0": 20858486,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-ae8bb5e67576",
+    "id": "ENSG00000099942.14",
+    "name": "CRKL",
+    "region_end0": 20953797,
+    "region_start0": 20917356,
+    "split": "test",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-b7ec0511c224",
+    "id": "ENSG00000099949.23",
+    "name": "LZTR1",
+    "region_end0": 20999085,
+    "region_start0": 20982172,
+    "split": "test",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-a63e950fc51d",
+    "id": "ENSG00000099954.20",
+    "name": "CECR2",
+    "region_end0": 17558201,
+    "region_start0": 17359898,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-5cd940933ff1",
+    "id": "ENSG00000099956.21",
+    "name": "SMARCB1",
+    "region_end0": 23838059,
+    "region_start0": 23786880,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-49d27da27fa3",
+    "id": "ENSG00000099957.18",
+    "name": "P2RX6",
+    "region_end0": 21028063,
+    "region_start0": 21009757,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-5cd940933ff1",
+    "id": "ENSG00000099958.16",
+    "name": "DERL3",
+    "region_end0": 23839178,
+    "region_start0": 23834452,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-49d27da27fa3",
+    "id": "ENSG00000099960.14",
+    "name": "SLC7A4",
+    "region_end0": 21032983,
+    "region_start0": 21028667,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-205f5904aea5",
+    "id": "ENSG00000099968.20",
+    "name": "BCL2L13",
+    "region_end0": 17730905,
+    "region_start0": 17628797,
+    "split": "test",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-ffebbd9acc93",
+    "id": "ENSG00000099974.9",
+    "name": "DDTL",
+    "region_end0": 23972608,
+    "region_start0": 23966837,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-ffebbd9acc93",
+    "id": "ENSG00000099977.17",
+    "name": "DDT",
+    "region_end0": 23980575,
+    "region_start0": 23970491,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-ffebbd9acc93",
+    "id": "ENSG00000099984.12",
+    "name": "GSTT2",
+    "region_end0": 23983965,
+    "region_start0": 23980007,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-3a03dbc2faf3",
+    "id": "ENSG00000099991.19",
+    "name": "CABIN1",
+    "region_end0": 24178684,
+    "region_start0": 24011141,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-5cf192a1bec2",
+    "id": "ENSG00000099992.17",
+    "name": "TBC1D10A",
+    "region_end0": 30326997,
+    "region_start0": 30291939,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-143fb1a2c1c9",
+    "id": "ENSG00000099994.12",
+    "name": "SUSD2",
+    "region_end0": 24189161,
+    "region_start0": 24181430,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-25b109751f88",
+    "id": "ENSG00000099995.20",
+    "name": "SF3A1",
+    "region_end0": 30356969,
+    "region_start0": 30331937,
+    "split": "test",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-a38a950f252f",
+    "id": "ENSG00000099998.20",
+    "name": "GGT5",
+    "region_end0": 24245798,
+    "region_start0": 24217949,
+    "split": "validation",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-f67031e0e629",
+    "id": "ENSG00000100003.18",
+    "name": "SEC14L2",
+    "region_end0": 30425353,
+    "region_start0": 30396890,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-c55c805e21d5",
+    "id": "ENSG00000100012.13",
+    "name": "SEC14L3",
+    "region_end0": 30472106,
+    "region_start0": 30447908,
+    "split": "validation",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-9323cf78a4ec",
+    "id": "ENSG00000100014.21",
+    "name": "SPECC1L",
+    "region_end0": 24417790,
+    "region_start0": 24270766,
+    "split": "validation",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-fb8460d14623",
+    "id": "ENSG00000100024.16",
+    "name": "UPB1",
+    "region_end0": 24528440,
+    "region_start0": 24494056,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-66f36bcde775",
+    "id": "ENSG00000100027.17",
+    "name": "YPEL1",
+    "region_end0": 21735844,
+    "region_start0": 21697485,
+    "split": "validation",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-d862e3b8bc72",
+    "id": "ENSG00000100028.13",
+    "name": "SNRPD3",
+    "region_end0": 24584094,
+    "region_start0": 24555906,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-808a5093c149",
+    "id": "ENSG00000100029.19",
+    "name": "PES1",
+    "region_end0": 30607133,
+    "region_start0": 30576574,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-e8b582cd533d",
+    "id": "ENSG00000100030.16",
+    "name": "MAPK1",
+    "region_end0": 21867730,
+    "region_start0": 21755486,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-d862e3b8bc72",
+    "id": "ENSG00000100031.20",
+    "name": "GGT1",
+    "region_end0": 24629061,
+    "region_start0": 24594633,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-5ec859575985",
+    "id": "ENSG00000100033.18",
+    "name": "PRODH",
+    "region_end0": 18936603,
+    "region_start0": 18912723,
+    "split": "validation",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-7fc819e420c1",
+    "id": "ENSG00000100034.14",
+    "name": "PPM1F",
+    "region_end0": 21952898,
+    "region_start0": 21919374,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-19e6ae0f2c12",
+    "id": "ENSG00000100036.13",
+    "name": "SLC35E4",
+    "region_end0": 30669066,
+    "region_start0": 30635730,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-effb8c19666a",
+    "id": "ENSG00000100038.21",
+    "name": "TOP3B",
+    "region_end0": 21982863,
+    "region_start0": 21956974,
+    "split": "validation",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-c58ce46fdbe8",
+    "id": "ENSG00000100053.10",
+    "name": "CRYBB3",
+    "region_end0": 25207409,
+    "region_start0": 25199807,
+    "split": "validation",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-5d273fc56926",
+    "id": "ENSG00000100055.22",
+    "name": "CYTH4",
+    "region_end0": 37315396,
+    "region_start0": 37281976,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-45001cba403d",
+    "id": "ENSG00000100056.13",
+    "name": "ESS2",
+    "region_end0": 19144734,
+    "region_start0": 19130228,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-328ea56ecbd3",
+    "id": "ENSG00000100065.16",
+    "name": "CARD10",
+    "region_end0": 37519592,
+    "region_start0": 37490311,
+    "split": "validation",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-2e5b492f3869",
+    "id": "ENSG00000100075.11",
+    "name": "SLC25A1",
+    "region_end0": 19178838,
+    "region_start0": 19175524,
+    "split": "validation",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-11d217a97018",
+    "id": "ENSG00000100077.17",
+    "name": "GRK3",
+    "region_end0": 25729344,
+    "region_start0": 25564381,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-c4a91c9b7f04",
+    "id": "ENSG00000100078.5",
+    "name": "PLA2G3",
+    "region_end0": 31140558,
+    "region_start0": 31134714,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-a51216badfad",
+    "id": "ENSG00000100079.7",
+    "name": "LGALS2",
+    "region_end0": 37582666,
+    "region_start0": 37570197,
+    "split": "validation",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-1848e4c92285",
+    "id": "ENSG00000100083.21",
+    "name": "GGA1",
+    "region_end0": 37633614,
+    "region_start0": 37608423,
+    "split": "validation",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-745ab5c1fb6f",
+    "id": "ENSG00000100084.15",
+    "name": "HIRA",
+    "region_end0": 19447500,
+    "region_start0": 19330642,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-c38ddeadb094",
+    "id": "ENSG00000100092.25",
+    "name": "SH3BP1",
+    "region_end0": 37656167,
+    "region_start0": 37634603,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-1df0fcecd510",
+    "id": "ENSG00000100095.20",
+    "name": "SEZ6L",
+    "region_end0": 26383647,
+    "region_start0": 26169411,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-84c533811c42",
+    "id": "ENSG00000100097.13",
+    "name": "LGALS1",
+    "region_end0": 37679855,
+    "region_start0": 37675585,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-381951b4c336",
+    "id": "ENSG00000100099.23",
+    "name": "HPS4",
+    "region_end0": 26483981,
+    "region_start0": 26443056,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-22ee81f2f3d5",
+    "id": "ENSG00000100100.15",
+    "name": "PIK3IP1",
+    "region_end0": 31292584,
+    "region_start0": 31281543,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-73af7fc64938",
+    "id": "ENSG00000100101.15",
+    "name": "ENSG00000100101",
+    "region_end0": 37726553,
+    "region_start0": 37686363,
+    "split": "validation",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-381951b4c336",
+    "id": "ENSG00000100104.14",
+    "name": "SRRD",
+    "region_end0": 26494708,
+    "region_start0": 26483826,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-eb2d7a722617",
+    "id": "ENSG00000100105.19",
+    "name": "PATZ1",
+    "region_end0": 31346655,
+    "region_start0": 31325753,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-73af7fc64938",
+    "id": "ENSG00000100106.22",
+    "name": "TRIOBP",
+    "region_end0": 37776606,
+    "region_start0": 37696997,
+    "split": "validation",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-381951b4c336",
+    "id": "ENSG00000100109.18",
+    "name": "TFIP11",
+    "region_end0": 26512555,
+    "region_start0": 26490937,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-b6cf2d296e0d",
+    "id": "ENSG00000100116.18",
+    "name": "GCAT",
+    "region_end0": 37817436,
+    "region_start0": 37807821,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-0bbde825f8d7",
+    "id": "ENSG00000100121.14",
+    "name": "GGTLC2",
+    "region_end0": 22647948,
+    "region_start0": 22644563,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-e8c7029e4741",
+    "id": "ENSG00000100122.8",
+    "name": "CRYBB1",
+    "region_end0": 26619680,
+    "region_start0": 26599226,
+    "split": "validation",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-d1f72520584e",
+    "id": "ENSG00000100124.16",
+    "name": "ANKRD54",
+    "region_end0": 37849377,
+    "region_start0": 37830802,
+    "split": "test",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-d1f72520584e",
+    "id": "ENSG00000100129.18",
+    "name": "EIF3L",
+    "region_end0": 37889457,
+    "region_start0": 37848817,
+    "split": "test",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-62959b9ebf97",
+    "id": "ENSG00000100138.15",
+    "name": "SNU13",
+    "region_end0": 41690554,
+    "region_start0": 41673882,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-d8fedc33f41e",
+    "id": "ENSG00000100139.15",
+    "name": "MICALL1",
+    "region_end0": 37942872,
+    "region_start0": 37905606,
+    "split": "test",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-5052216e6724",
+    "id": "ENSG00000100142.17",
+    "name": "POLR2F",
+    "region_end0": 38041965,
+    "region_start0": 37952556,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-5052216e6724",
+    "id": "ENSG00000100146.21",
+    "name": "SOX10",
+    "region_end0": 37987472,
+    "region_start0": 37970635,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-f735b6beddf1",
+    "id": "ENSG00000100147.16",
+    "name": "CCDC134",
+    "region_end0": 41832222,
+    "region_start0": 41800270,
+    "split": "test",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-afd38e00e0f0",
+    "id": "ENSG00000100150.21",
+    "name": "DEPDC5",
+    "region_end0": 31908083,
+    "region_start0": 31753816,
+    "split": "validation",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-4861f021f580",
+    "id": "ENSG00000100151.17",
+    "name": "PICK1",
+    "region_end0": 38075769,
+    "region_start0": 38056260,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-3b2d783d9507",
+    "id": "ENSG00000100154.15",
+    "name": "TTC28",
+    "region_end0": 28679890,
+    "region_start0": 27977963,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-0281b25b3a9b",
+    "id": "ENSG00000100156.13",
+    "name": "SLC16A8",
+    "region_end0": 38084234,
+    "region_start0": 38078083,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-c7463658f357",
+    "id": "ENSG00000100162.17",
+    "name": "CENPM",
+    "region_end0": 41947233,
+    "region_start0": 41927463,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-519eb9ff6255",
+    "id": "ENSG00000100167.21",
+    "name": "SEPTIN3",
+    "region_end0": 41998271,
+    "region_start0": 41969392,
+    "split": "validation",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-5929806d1fb7",
+    "id": "ENSG00000100170.11",
+    "name": "SLC5A1",
+    "region_end0": 32113079,
+    "region_start0": 32042999,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-b1543eff9f36",
+    "id": "ENSG00000100191.6",
+    "name": "SLC5A4",
+    "region_end0": 32255397,
+    "region_start0": 32218413,
+    "split": "test",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-c1e11c944232",
+    "id": "ENSG00000100196.12",
+    "name": "KDELR3",
+    "region_end0": 38483497,
+    "region_start0": 38467992,
+    "split": "validation",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-759df48b6507",
+    "id": "ENSG00000100197.24",
+    "name": "CYP2D6",
+    "region_end0": 42131286,
+    "region_start0": 42125911,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-48cdf83fc0bc",
+    "id": "ENSG00000100206.12",
+    "name": "DMC1",
+    "region_end0": 38570261,
+    "region_start0": 38518854,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-d5a4bb65e3a0",
+    "id": "ENSG00000100207.21",
+    "name": "TCF20",
+    "region_end0": 42343666,
+    "region_start0": 42159962,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-eedf1873ab9c",
+    "id": "ENSG00000100209.12",
+    "name": "HSCB",
+    "region_end0": 28757572,
+    "region_start0": 28741988,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-61e42253681e",
+    "id": "ENSG00000100211.13",
+    "name": "CBY1",
+    "region_end0": 38673918,
+    "region_start0": 38656324,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-ab830bbb9221",
+    "id": "ENSG00000100216.7",
+    "name": "TOMM22",
+    "region_end0": 38685471,
+    "region_start0": 38681873,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-fc3a9f9cad13",
+    "id": "ENSG00000100218.12",
+    "name": "RSPH14",
+    "region_end0": 23145071,
+    "region_start0": 23059364,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-c9706cdeeb67",
+    "id": "ENSG00000100219.18",
+    "name": "XBP1",
+    "region_end0": 28800647,
+    "region_start0": 28794504,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-3ea95549d50b",
+    "id": "ENSG00000100220.13",
+    "name": "RTCB",
+    "region_end0": 32412315,
+    "region_start0": 32387525,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-394ff17bf2e0",
+    "id": "ENSG00000100221.12",
+    "name": "JOSD1",
+    "region_end0": 38701606,
+    "region_start0": 38685492,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-ec2fbd01a871",
+    "id": "ENSG00000100226.17",
+    "name": "GTPBP1",
+    "region_end0": 38738349,
+    "region_start0": 38705691,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-a9a34585494d",
+    "id": "ENSG00000100228.15",
+    "name": "RAB36",
+    "region_end0": 23165713,
+    "region_start0": 23145315,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-2199497d2e96",
+    "id": "ENSG00000100234.13",
+    "name": "TIMP3",
+    "region_end0": 32863092,
+    "region_start0": 32801525,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-e6c1fdef85ea",
+    "id": "ENSG00000100239.17",
+    "name": "PPP6R2",
+    "region_end0": 50445140,
+    "region_start0": 50343249,
+    "split": "test",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-e6c1fdef85ea",
+    "id": "ENSG00000100241.23",
+    "name": "SBF1",
+    "region_end0": 50483973,
+    "region_start0": 50443168,
+    "split": "test",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-ec2fbd01a871",
+    "id": "ENSG00000100242.17",
+    "name": "SUN2",
+    "region_end0": 38794193,
+    "region_start0": 38733229,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-27a8ec29ead4",
+    "id": "ENSG00000100243.23",
+    "name": "CYB5R3",
+    "region_end0": 42720920,
+    "region_start0": 42615679,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-ec2fbd01a871",
+    "id": "ENSG00000100246.14",
+    "name": "DNAL4",
+    "region_end0": 38794248,
+    "region_start0": 38778457,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-0a7789f1ac0e",
+    "id": "ENSG00000100249.5",
+    "name": "C22orf31",
+    "region_end0": 29061881,
+    "region_start0": 29058621,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-c42c4754edf5",
+    "id": "ENSG00000100253.14",
+    "name": "MIOX",
+    "region_end0": 50490698,
+    "region_start0": 50486733,
+    "split": "test",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-e9f33ee5688e",
+    "id": "ENSG00000100263.15",
+    "name": "RHBDD3",
+    "region_end0": 29268271,
+    "region_start0": 29259801,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-b62d87a98dc0",
+    "id": "ENSG00000100266.20",
+    "name": "PACSIN2",
+    "region_end0": 43015235,
+    "region_start0": 42835361,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-7901d0ce3803",
+    "id": "ENSG00000100271.18",
+    "name": "TTLL1",
+    "region_end0": 43089477,
+    "region_start0": 43039465,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-fcf2621089cd",
+    "id": "ENSG00000100276.11",
+    "name": "RASL10A",
+    "region_end0": 29319729,
+    "region_start0": 29312882,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-b94186c99aa1",
+    "id": "ENSG00000100280.18",
+    "name": "AP1B1",
+    "region_end0": 29388662,
+    "region_start0": 29327629,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-8a0e7fdfca35",
+    "id": "ENSG00000100284.23",
+    "name": "TOM1",
+    "region_end0": 35348045,
+    "region_start0": 35299224,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-8d27bc2d8dcc",
+    "id": "ENSG00000100285.10",
+    "name": "NEFH",
+    "region_end0": 29491440,
+    "region_start0": 29480167,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-d6b2e4483012",
+    "id": "ENSG00000100288.21",
+    "name": "CHKB",
+    "region_end0": 50601505,
+    "region_start0": 50578908,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-062753d0415f",
+    "id": "ENSG00000100290.4",
+    "name": "BIK",
+    "region_end0": 43129762,
+    "region_start0": 43110697,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-5f62d45e2510",
+    "id": "ENSG00000100292.18",
+    "name": "HMOX1",
+    "region_end0": 35394264,
+    "region_start0": 35380310,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-07419a54d00d",
+    "id": "ENSG00000100294.14",
+    "name": "MCAT",
+    "region_end0": 43143448,
+    "region_start0": 43132158,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-58156c220ce9",
+    "id": "ENSG00000100296.15",
+    "name": "THOC5",
+    "region_end0": 29555266,
+    "region_start0": 29505828,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-71d3e42d6707",
+    "id": "ENSG00000100297.17",
+    "name": "MCM5",
+    "region_end0": 35425481,
+    "region_start0": 35400072,
+    "split": "validation",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-f64cde361164",
+    "id": "ENSG00000100298.16",
+    "name": "APOBEC3H",
+    "region_end0": 39104117,
+    "region_start0": 39097173,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-76724dc3c7e8",
+    "id": "ENSG00000100299.19",
+    "name": "ARSA",
+    "region_end0": 50628227,
+    "region_start0": 50622703,
+    "split": "validation",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-bc7a29500acf",
+    "id": "ENSG00000100300.19",
+    "name": "TSPO",
+    "region_end0": 43163296,
+    "region_start0": 43151026,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-66b02dee38d6",
+    "id": "ENSG00000100304.13",
+    "name": "TTLL12",
+    "region_end0": 43187184,
+    "region_start0": 43166571,
+    "split": "test",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-27a1ce49a1e8",
+    "id": "ENSG00000100307.14",
+    "name": "CBX7",
+    "region_end0": 39152769,
+    "region_start0": 39120116,
+    "split": "validation",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-740a257c559c",
+    "id": "ENSG00000100311.18",
+    "name": "PDGFB",
+    "region_end0": 39245032,
+    "region_start0": 39223308,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-30652604dc37",
+    "id": "ENSG00000100312.11",
+    "name": "ACR",
+    "region_end0": 50745389,
+    "region_start0": 50738145,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-faf83cb3c394",
+    "id": "ENSG00000100314.5",
+    "name": "CABP7",
+    "region_end0": 29731883,
+    "region_start0": 29719952,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-4071181afc00",
+    "id": "ENSG00000100316.17",
+    "name": "RPL3",
+    "region_end0": 39320439,
+    "region_start0": 39312819,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-faf83cb3c394",
+    "id": "ENSG00000100319.14",
+    "name": "ZMAT5",
+    "region_end0": 29767134,
+    "region_start0": 29728087,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-137465ab32b2",
+    "id": "ENSG00000100320.25",
+    "name": "RBFOX2",
+    "region_end0": 36028874,
+    "region_start0": 35738685,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-69bfb9a7d5e2",
+    "id": "ENSG00000100321.16",
+    "name": "SYNGR1",
+    "region_end0": 39385638,
+    "region_start0": 39349858,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-9bcbbd482e37",
+    "id": "ENSG00000100324.15",
+    "name": "TAB1",
+    "region_end0": 39437110,
+    "region_start0": 39399727,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-34056686cb25",
+    "id": "ENSG00000100325.16",
+    "name": "ASCC2",
+    "region_end0": 29838354,
+    "region_start0": 29788557,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-0bc84bb635f6",
+    "id": "ENSG00000100330.17",
+    "name": "MTMR3",
+    "region_end0": 30030918,
+    "region_start0": 29883090,
+    "split": "test",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-1360a23aced7",
+    "id": "ENSG00000100335.16",
+    "name": "MIEF1",
+    "region_end0": 39518182,
+    "region_start0": 39499381,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-2415ded18bff",
+    "id": "ENSG00000100336.19",
+    "name": "APOL4",
+    "region_end0": 36204890,
+    "region_start0": 36189073,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-fce7fd1dd956",
+    "id": "ENSG00000100341.14",
+    "name": "PNPLA5",
+    "region_end0": 43892544,
+    "region_start0": 43878517,
+    "split": "test",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-33a70fd37279",
+    "id": "ENSG00000100342.23",
+    "name": "APOL1",
+    "region_end0": 36267580,
+    "region_start0": 36253020,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-2ec010547a27",
+    "id": "ENSG00000100344.12",
+    "name": "PNPLA3",
+    "region_end0": 43964538,
+    "region_start0": 43923730,
+    "split": "test",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-c0f256444092",
+    "id": "ENSG00000100345.24",
+    "name": "MYH9",
+    "region_end0": 36388060,
+    "region_start0": 36281228,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-30392f0f4ac6",
+    "id": "ENSG00000100346.18",
+    "name": "CACNA1I",
+    "region_end0": 39689785,
+    "region_start0": 39570702,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-2ec010547a27",
+    "id": "ENSG00000100347.16",
+    "name": "SAMM50",
+    "region_end0": 44010581,
+    "region_start0": 43955348,
+    "split": "test",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-0b57c219ff0d",
+    "id": "ENSG00000100348.11",
+    "name": "TXN2",
+    "region_end0": 36482122,
+    "region_start0": 36466844,
+    "split": "validation",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-409bb7ea17c8",
+    "id": "ENSG00000100351.18",
+    "name": "GRAP2",
+    "region_end0": 39973771,
+    "region_start0": 39901033,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-d153a98b5a60",
+    "id": "ENSG00000100353.19",
+    "name": "EIF3D",
+    "region_end0": 36529295,
+    "region_start0": 36510799,
+    "split": "validation",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-7b6a91d1172f",
+    "id": "ENSG00000100354.23",
+    "name": "TNRC6B",
+    "region_end0": 40335858,
+    "region_start0": 40044766,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-1a196e292f35",
+    "id": "ENSG00000100359.22",
+    "name": "SGSM3",
+    "region_end0": 40410339,
+    "region_start0": 40370513,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-98277d1e4701",
+    "id": "ENSG00000100362.14",
+    "name": "PVALB",
+    "region_end0": 36819529,
+    "region_start0": 36800631,
+    "split": "test",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-b61955aa7c24",
+    "id": "ENSG00000100364.20",
+    "name": "KIAA0930",
+    "region_end0": 45240994,
+    "region_start0": 45192193,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-7a055251423e",
+    "id": "ENSG00000100365.16",
+    "name": "NCF4",
+    "region_end0": 36878067,
+    "region_start0": 36860937,
+    "split": "test",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-915867b29121",
+    "id": "ENSG00000100368.16",
+    "name": "CSF2RB",
+    "region_end0": 36940493,
+    "region_start0": 36913577,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-385951789645",
+    "id": "ENSG00000100372.16",
+    "name": "SLC25A17",
+    "region_end0": 40819451,
+    "region_start0": 40769579,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-e2a5e7d4c6a3",
+    "id": "ENSG00000100376.13",
+    "name": "FAM118A",
+    "region_end0": 45342874,
+    "region_start0": 45308917,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-9573aa3150c4",
+    "id": "ENSG00000100379.19",
+    "name": "KCTD17",
+    "region_end0": 37063440,
+    "region_start0": 37051688,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-a6ccd8c2f59f",
+    "id": "ENSG00000100380.16",
+    "name": "ST13",
+    "region_end0": 40856740,
+    "region_start0": 40824484,
+    "split": "test",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-6f3389a4c9f0",
+    "id": "ENSG00000100385.16",
+    "name": "IL2RB",
+    "region_end0": 37176726,
+    "region_start0": 37118615,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-fe44be12a5a0",
+    "id": "ENSG00000100387.10",
+    "name": "RBX1",
+    "region_end0": 40973589,
+    "region_start0": 40951226,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-b24af3ad6c74",
+    "id": "ENSG00000100393.17",
+    "name": "EP300",
+    "region_end0": 41180127,
+    "region_start0": 41091765,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-b800571d4830",
+    "id": "ENSG00000100399.17",
+    "name": "CHADL",
+    "region_end0": 41240981,
+    "region_start0": 41229459,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-e01f917bcac0",
+    "id": "ENSG00000100401.22",
+    "name": "RANGAP1",
+    "region_end0": 41286322,
+    "region_start0": 41244728,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-37a400651c8a",
+    "id": "ENSG00000100403.13",
+    "name": "ZC3H7B",
+    "region_end0": 41360205,
+    "region_start0": 41301406,
+    "split": "validation",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-90116121b7a8",
+    "id": "ENSG00000100410.9",
+    "name": "PHF5A",
+    "region_end0": 41468761,
+    "region_start0": 41459654,
+    "split": "test",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-90116121b7a8",
+    "id": "ENSG00000100412.18",
+    "name": "ACO2",
+    "region_end0": 41529323,
+    "region_start0": 41447779,
+    "split": "test",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-90116121b7a8",
+    "id": "ENSG00000100413.18",
+    "name": "POLR3H",
+    "region_end0": 41544656,
+    "region_start0": 41525748,
+    "split": "test",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-74f56d2a2a3d",
+    "id": "ENSG00000100416.16",
+    "name": "TRMU",
+    "region_end0": 46357394,
+    "region_start0": 46330824,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-fcef0386cbf7",
+    "id": "ENSG00000100417.13",
+    "name": "PMM1",
+    "region_end0": 41595325,
+    "region_start0": 41576845,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-65f425cc0fbe",
+    "id": "ENSG00000100418.9",
+    "name": "DESI1",
+    "region_end0": 41621131,
+    "region_start0": 41597977,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-c1ae1c8bfe45",
+    "id": "ENSG00000100422.15",
+    "name": "CERK",
+    "region_end0": 46738317,
+    "region_start0": 46684359,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-833a138cc590",
+    "id": "ENSG00000100425.21",
+    "name": "BRD1",
+    "region_end0": 49827994,
+    "region_start0": 49773227,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-40bbfacd19f8",
+    "id": "ENSG00000100427.17",
+    "name": "MLC1",
+    "region_end0": 50086019,
+    "region_start0": 50059340,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-d7d53a3db06b",
+    "id": "ENSG00000100429.19",
+    "name": "HDAC10",
+    "region_end0": 50251455,
+    "region_start0": 50245132,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-6eeeeb029b1f",
+    "id": "ENSG00000128159.13",
+    "name": "TUBGCP6",
+    "region_end0": 50245078,
+    "region_start0": 50217637,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-e6c1fdef85ea",
+    "id": "ENSG00000128165.9",
+    "name": "ADM2",
+    "region_end0": 50486490,
+    "region_start0": 50481492,
+    "split": "test",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-5bc6be38c5c5",
+    "id": "ENSG00000128185.11",
+    "name": "DGCR6L",
+    "region_end0": 20320130,
+    "region_start0": 20314187,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-f692cc08cdd9",
+    "id": "ENSG00000128191.18",
+    "name": "DGCR8",
+    "region_end0": 20111927,
+    "region_start0": 20079984,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-381951b4c336",
+    "id": "ENSG00000128203.8",
+    "name": "ASPHD2",
+    "region_end0": 26445065,
+    "region_start0": 26428678,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-c237f8c675f5",
+    "id": "ENSG00000128218.8",
+    "name": "VPREB3",
+    "region_end0": 23754475,
+    "region_start0": 23752692,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-124151094fc7",
+    "id": "ENSG00000128228.6",
+    "name": "SDF2L1",
+    "region_end0": 21644349,
+    "region_start0": 21642251,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-99404590fe96",
+    "id": "ENSG00000128242.14",
+    "name": "GAL3ST1",
+    "region_end0": 30576260,
+    "region_start0": 30554581,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-afd38e00e0f0",
+    "id": "ENSG00000128245.16",
+    "name": "YWHAH",
+    "region_end0": 31957653,
+    "region_start0": 31944471,
+    "split": "validation",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-3ac62f7b18d6",
+    "id": "ENSG00000128250.5",
+    "name": "RFPL1",
+    "region_end0": 29442505,
+    "region_start0": 29438532,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-c32bac5af4f5",
+    "id": "ENSG00000128253.16",
+    "name": "RFPL2",
+    "region_end0": 32205123,
+    "region_start0": 32190384,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-fc3a9f9cad13",
+    "id": "ENSG00000128266.10",
+    "name": "GNAZ",
+    "region_end0": 23125086,
+    "region_start0": 23070274,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-e7f19c42d792",
+    "id": "ENSG00000128268.13",
+    "name": "MGAT3",
+    "region_end0": 39492244,
+    "region_start0": 39447076,
+    "split": "test",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-9323cf78a4ec",
+    "id": "ENSG00000128271.23",
+    "name": "ADORA2A",
+    "region_end0": 24443227,
+    "region_start0": 24417828,
+    "split": "validation",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-061dae9a460c",
+    "id": "ENSG00000128272.20",
+    "name": "ATF4",
+    "region_end0": 39522740,
+    "region_start0": 39519644,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-27a8ec29ead4",
+    "id": "ENSG00000128274.18",
+    "name": "A4GALT",
+    "region_end0": 42721348,
+    "region_start0": 42690959,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-010054e5efce",
+    "id": "ENSG00000128276.10",
+    "name": "RFPL3",
+    "region_end0": 32361211,
+    "region_start0": 32354834,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-ffed526ab2d0",
+    "id": "ENSG00000128283.8",
+    "name": "CDC42EP1",
+    "region_end0": 37569814,
+    "region_start0": 37555061,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-2f8b984141fa",
+    "id": "ENSG00000128284.22",
+    "name": "APOL3",
+    "region_end0": 36166227,
+    "region_start0": 36139741,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-03bb2c27a28b",
+    "id": "ENSG00000128285.5",
+    "name": "MCHR1",
+    "region_end0": 40682862,
+    "region_start0": 40679222,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-cce90c07eb19",
+    "id": "ENSG00000128294.17",
+    "name": "TPST2",
+    "region_end0": 26596767,
+    "region_start0": 26521945,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-591d57075663",
+    "id": "ENSG00000128298.19",
+    "name": "BAIAP2L2",
+    "region_end0": 38111065,
+    "region_start0": 38084601,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-ec05b047823d",
+    "id": "ENSG00000128309.19",
+    "name": "MPST",
+    "region_end0": 37029872,
+    "region_start0": 37019584,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-e5b5d574c9be",
+    "id": "ENSG00000128310.4",
+    "name": "GALR3",
+    "region_end0": 37825535,
+    "region_start0": 37822147,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-ec05b047823d",
+    "id": "ENSG00000128311.15",
+    "name": "TST",
+    "region_end0": 37024847,
+    "region_start0": 37010808,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-89ecd49c4560",
+    "id": "ENSG00000128313.2",
+    "name": "APOL5",
+    "region_end0": 35729533,
+    "region_start0": 35717821,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-aa0fa933ec56",
+    "id": "ENSG00000128322.7",
+    "name": "IGLL1",
+    "region_end0": 23580352,
+    "region_start0": 23573074,
+    "split": "test",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-f6689f0b7dd7",
+    "id": "ENSG00000128335.15",
+    "name": "APOL2",
+    "region_end0": 36240004,
+    "region_start0": 36226158,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-1470af40eea2",
+    "id": "ENSG00000128340.17",
+    "name": "RAC2",
+    "region_end0": 37259644,
+    "region_start0": 37225219,
+    "split": "test",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-d11db6893576",
+    "id": "ENSG00000128342.5",
+    "name": "LIF",
+    "region_end0": 30246809,
+    "region_start0": 30240402,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-5052216e6724",
+    "id": "ENSG00000128346.12",
+    "name": "C22orf23",
+    "region_end0": 37953719,
+    "region_start0": 37942999,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-2a43d10c3977",
+    "id": "ENSG00000128383.14",
+    "name": "APOBEC3A",
+    "region_end0": 38963234,
+    "region_start0": 38952690,
+    "split": "test",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-c8e443aaa459",
+    "id": "ENSG00000128394.18",
+    "name": "APOBEC3F",
+    "region_end0": 39056022,
+    "region_start0": 39040553,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-087ce11384cb",
+    "id": "ENSG00000128408.9",
+    "name": "RIBC2",
+    "region_end0": 45432559,
+    "region_start0": 45413642,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-cad1c638c3db",
+    "id": "ENSG00000130487.10",
+    "name": "KLHDC7B",
+    "region_end0": 50551073,
+    "region_start0": 50545848,
+    "split": "test",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-7ba32b1ab6f5",
+    "id": "ENSG00000130540.15",
+    "name": "SULT4A1",
+    "region_end0": 43862563,
+    "region_start0": 43824458,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-a7471b8065f4",
+    "id": "ENSG00000130638.18",
+    "name": "ATXN10",
+    "region_end0": 45845357,
+    "region_start0": 45671747,
+    "split": "test",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-205f5904aea5",
+    "id": "ENSG00000131100.14",
+    "name": "ATP6V1E1",
+    "region_end0": 17631008,
+    "region_start0": 17592085,
+    "split": "test",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-7d52b234d1c7",
+    "id": "ENSG00000133422.15",
+    "name": "MORC2",
+    "region_end0": 30969132,
+    "region_start0": 30925079,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-5ab21de9a3c9",
+    "id": "ENSG00000133424.23",
+    "name": "LARGE1",
+    "region_end0": 33922935,
+    "region_start0": 33162175,
+    "split": "validation",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-ddfcb7923b46",
+    "id": "ENSG00000133433.12",
+    "name": "GSTT2B",
+    "region_end0": 23961247,
+    "region_start0": 23957363,
+    "split": "validation",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-b73b1e53aeb7",
+    "id": "ENSG00000133454.16",
+    "name": "MYO18B",
+    "region_end0": 26031095,
+    "region_start0": 25742093,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-6e9a003e6e86",
+    "id": "ENSG00000133460.21",
+    "name": "SLC2A11",
+    "region_end0": 23886362,
+    "region_start0": 23856652,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-8771e700ab67",
+    "id": "ENSG00000133466.15",
+    "name": "C1QTNF6",
+    "region_end0": 37199435,
+    "region_start0": 37180115,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-964b2a3febef",
+    "id": "ENSG00000133477.17",
+    "name": "FAM83F",
+    "region_end0": 40043584,
+    "region_start0": 39994903,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-3a68795b8d65",
+    "id": "ENSG00000133488.16",
+    "name": "SEC14L4",
+    "region_end0": 30505761,
+    "region_start0": 30488851,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-d862e3b8bc72",
+    "id": "ENSG00000138867.18",
+    "name": "GUCD1",
+    "region_end0": 24555985,
+    "region_start0": 24540372,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-bc0110deda0b",
+    "id": "ENSG00000138892.12",
+    "name": "TTLL8",
+    "region_end0": 50058348,
+    "region_start0": 50018524,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-f15ea05299bc",
+    "id": "ENSG00000138942.18",
+    "name": "RNF185",
+    "region_end0": 31207069,
+    "region_start0": 31160107,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-faf96afd3a34",
+    "id": "ENSG00000138944.8",
+    "name": "SHISAL1",
+    "region_end0": 44313001,
+    "region_start0": 44243614,
+    "split": "validation",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-2ec010547a27",
+    "id": "ENSG00000138964.19",
+    "name": "PARVG",
+    "region_end0": 44219583,
+    "region_start0": 44172905,
+    "split": "test",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-23fd93079ee5",
+    "id": "ENSG00000159307.21",
+    "name": "SCUBE1",
+    "region_end0": 43343425,
+    "region_start0": 43197229,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-fab2bb2fa875",
+    "id": "ENSG00000159496.15",
+    "name": "RGL4",
+    "region_end0": 23699226,
+    "region_start0": 23688085,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-e47ec81ca42e",
+    "id": "ENSG00000159873.11",
+    "name": "CCDC117",
+    "region_end0": 28789351,
+    "region_start0": 28772623,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-91b8a120d5db",
+    "id": "ENSG00000159958.8",
+    "name": "TNFRSF13C",
+    "region_end0": 41926856,
+    "region_start0": 41921981,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-ae78c5b2795b",
+    "id": "ENSG00000161179.15",
+    "name": "YDJC",
+    "region_end0": 21630114,
+    "region_start0": 21628038,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-f11dd72b92bf",
+    "id": "ENSG00000161180.11",
+    "name": "CCDC116",
+    "region_end0": 21637379,
+    "region_start0": 21632665,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-bbefd09d5a06",
+    "id": "ENSG00000166862.7",
+    "name": "CACNG2",
+    "region_end0": 36703802,
+    "region_start0": 36560806,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-1a271d146ddc",
+    "id": "ENSG00000166897.17",
+    "name": "ELFN2",
+    "region_end0": 37427529,
+    "region_start0": 37367909,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-71ccf41b44e5",
+    "id": "ENSG00000167037.20",
+    "name": "SGSM1",
+    "region_end0": 24927628,
+    "region_start0": 24806118,
+    "split": "test",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-19e6ae0f2c12",
+    "id": "ENSG00000167065.15",
+    "name": "DUSP18",
+    "region_end0": 30667937,
+    "region_start0": 30652000,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-d144008abc8c",
+    "id": "ENSG00000167074.16",
+    "name": "TEF",
+    "region_end0": 41399376,
+    "region_start0": 41367282,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-665f5867a6f3",
+    "id": "ENSG00000167077.14",
+    "name": "MEI1",
+    "region_end0": 41799506,
+    "region_start0": 41699452,
+    "split": "test",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-56b0da315c6f",
+    "id": "ENSG00000168135.5",
+    "name": "KCNJ4",
+    "region_end0": 38455689,
+    "region_start0": 38426276,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-87a57948ae9f",
+    "id": "ENSG00000169184.7",
+    "name": "MN1",
+    "region_end0": 27801806,
+    "region_start0": 27748226,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-ae71baea8d9a",
+    "id": "ENSG00000169314.16",
+    "name": "C22orf15",
+    "region_end0": 23765913,
+    "region_start0": 23762939,
+    "split": "test",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-23cdd2d1c277",
+    "id": "ENSG00000169548.3",
+    "name": "ZNF280A",
+    "region_end0": 22520320,
+    "region_start0": 22513685,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-496f691de9ae",
+    "id": "ENSG00000169635.11",
+    "name": "HIC2",
+    "region_end0": 21451513,
+    "region_start0": 21416453,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-e28bd3c9e3da",
+    "id": "ENSG00000170638.11",
+    "name": "TRABD",
+    "region_end0": 50199650,
+    "region_start0": 50184666,
+    "split": "validation",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-fcef0386cbf7",
+    "id": "ENSG00000172346.16",
+    "name": "CSDC2",
+    "region_end0": 41577791,
+    "region_start0": 41560807,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-76de3582ec70",
+    "id": "ENSG00000172967.8",
+    "name": "XKR3",
+    "region_end0": 16825461,
+    "region_start0": 16783361,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-296bc9597ccb",
+    "id": "ENSG00000175329.14",
+    "name": "ISX",
+    "region_end0": 35087442,
+    "region_start0": 35066085,
+    "split": "validation",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-721f7d988126",
+    "id": "ENSG00000176635.19",
+    "name": "HORMAD2",
+    "region_end0": 30177125,
+    "region_start0": 30080413,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-d732e07507a4",
+    "id": "ENSG00000177096.10",
+    "name": "PHETA2",
+    "region_end0": 42079489,
+    "region_start0": 42073738,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-f77c5a06d0a8",
+    "id": "ENSG00000177663.16",
+    "name": "IL17RA",
+    "region_end0": 17115743,
+    "region_start0": 17084883,
+    "split": "validation",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-a9a099e6a9e0",
+    "id": "ENSG00000177989.15",
+    "name": "CIMAP1B",
+    "region_end0": 50532570,
+    "region_start0": 50529659,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-1dee43cccc35",
+    "id": "ENSG00000179750.16",
+    "name": "APOBEC3B",
+    "region_end0": 38992854,
+    "region_start0": 38982296,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-b180b53e038d",
+    "id": "ENSG00000180957.19",
+    "name": "PITPNB",
+    "region_end0": 27920184,
+    "region_start0": 27851618,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-cdb6d4423b74",
+    "id": "ENSG00000182541.19",
+    "name": "LIMK2",
+    "region_end0": 31281014,
+    "region_start0": 31212142,
+    "split": "test",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-1667e5495cc3",
+    "id": "ENSG00000182858.15",
+    "name": "ALG12",
+    "region_end0": 49918508,
+    "region_start0": 49900178,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-e9f33ee5688e",
+    "id": "ENSG00000182944.19",
+    "name": "EWSR1",
+    "region_end0": 29300580,
+    "region_start0": 29267958,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-3b43e80ab41b",
+    "id": "ENSG00000183066.16",
+    "name": "WBP2NL",
+    "region_end0": 42058506,
+    "region_start0": 41998674,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-3e422a77325e",
+    "id": "ENSG00000183172.10",
+    "name": "SMDT1",
+    "region_end0": 42088293,
+    "region_start0": 42079513,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-9da6f0996551",
+    "id": "ENSG00000183307.4",
+    "name": "TMEM121B",
+    "region_end0": 17121417,
+    "region_start0": 17116246,
+    "split": "validation",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-5208bc0d976f",
+    "id": "ENSG00000183569.19",
+    "name": "SERHL2",
+    "region_end0": 42574437,
+    "region_start0": 42553566,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-656cfa06cc72",
+    "id": "ENSG00000183579.17",
+    "name": "ZNRF3",
+    "region_end0": 29057538,
+    "region_start0": 28883514,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-badb896d274e",
+    "id": "ENSG00000183597.17",
+    "name": "TANGO2",
+    "region_end0": 20067214,
+    "region_start0": 20016564,
+    "split": "test",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-5ec859575985",
+    "id": "ENSG00000183628.15",
+    "name": "DGCR6",
+    "region_end0": 18914331,
+    "region_start0": 18905626,
+    "split": "validation",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-e01bea6749ca",
+    "id": "ENSG00000183741.13",
+    "name": "CBX6",
+    "region_end0": 38872299,
+    "region_start0": 38861371,
+    "split": "validation",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-a58d45017a5c",
+    "id": "ENSG00000183762.14",
+    "name": "KREMEN1",
+    "region_end0": 29168383,
+    "region_start0": 29072899,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-eedf1873ab9c",
+    "id": "ENSG00000183765.25",
+    "name": "CHEK2",
+    "region_end0": 28742472,
+    "region_start0": 28687687,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-ea66a0f82be0",
+    "id": "ENSG00000183773.17",
+    "name": "AIFM3",
+    "region_end0": 20981414,
+    "region_start0": 20965057,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-5dc7e69badc8",
+    "id": "ENSG00000183785.17",
+    "name": "TUBA8",
+    "region_end0": 18146733,
+    "region_start0": 18110049,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-d947c4dd8902",
+    "id": "ENSG00000183864.7",
+    "name": "TOB2",
+    "region_end0": 41446851,
+    "region_start0": 41433438,
+    "split": "test",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-c0c411f30a2e",
+    "id": "ENSG00000183963.20",
+    "name": "SMTN",
+    "region_end0": 31104807,
+    "region_start0": 31064054,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-9429e3d1ce06",
+    "id": "ENSG00000184058.16",
+    "name": "TBX1",
+    "region_end0": 19783643,
+    "region_start0": 19756652,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-78ab65b85a15",
+    "id": "ENSG00000184076.14",
+    "name": "UQCR10",
+    "region_end0": 29770463,
+    "region_start0": 29767318,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-49cdc36cc86c",
+    "id": "ENSG00000184113.10",
+    "name": "CLDN5",
+    "region_end0": 19527595,
+    "region_start0": 19522973,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-1667e5495cc3",
+    "id": "ENSG00000184164.16",
+    "name": "CRELD2",
+    "region_end0": 49927594,
+    "region_start0": 49917938,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-9cc9c4254ffb",
+    "id": "ENSG00000184381.21",
+    "name": "PLA2G6",
+    "region_end0": 38214828,
+    "region_start0": 38111444,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-b7ec0511c224",
+    "id": "ENSG00000184436.13",
+    "name": "THAP7",
+    "region_end0": 21002246,
+    "region_start0": 20999053,
+    "split": "test",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-75fc5e294658",
+    "id": "ENSG00000184459.10",
+    "name": "BPIFC",
+    "region_end0": 32464534,
+    "region_start0": 32413794,
+    "split": "test",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-badb896d274e",
+    "id": "ENSG00000184470.21",
+    "name": "TXNRD2",
+    "region_end0": 19941870,
+    "region_start0": 19875466,
+    "split": "test",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-e60e0bb30b76",
+    "id": "ENSG00000184571.14",
+    "name": "PIWIL3",
+    "region_end0": 24774770,
+    "region_start0": 24718983,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-9073d5d5f431",
+    "id": "ENSG00000184792.17",
+    "name": "OSBP2",
+    "region_end0": 30907874,
+    "region_start0": 30693731,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-61e42253681e",
+    "id": "ENSG00000184949.18",
+    "name": "FAM227A",
+    "region_end0": 38656679,
+    "region_start0": 38578067,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-a490b9dc8c42",
+    "id": "ENSG00000184979.13",
+    "name": "USP18",
+    "region_end0": 18177447,
+    "region_start0": 18148348,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-3e422a77325e",
+    "id": "ENSG00000184983.12",
+    "name": "NDUFA6",
+    "region_end0": 42090934,
+    "region_start0": 42085475,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-9cc9c4254ffb",
+    "id": "ENSG00000185022.14",
+    "name": "MAFF",
+    "region_end0": 38216561,
+    "region_start0": 38200716,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-c4a91c9b7f04",
+    "id": "ENSG00000185133.15",
+    "name": "INPP5J",
+    "region_end0": 31134747,
+    "region_start0": 31122680,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-0cd6bf28fd93",
+    "id": "ENSG00000185252.20",
+    "name": "ZNF74",
+    "region_end0": 20408511,
+    "region_start0": 20394064,
+    "split": "test",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-68af2e16d4cb",
+    "id": "ENSG00000185264.12",
+    "name": "CIMIP4",
+    "region_end0": 37007901,
+    "region_start0": 36991069,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-8e05b6465e08",
+    "id": "ENSG00000185340.17",
+    "name": "GAS2L1",
+    "region_end0": 29312837,
+    "region_start0": 29306343,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-2966c0ae5aa5",
+    "id": "ENSG00000185386.16",
+    "name": "MAPK11",
+    "region_end0": 50270817,
+    "region_start0": 50263662,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-745ab5c1fb6f",
+    "id": "ENSG00000185608.10",
+    "name": "MRPL40",
+    "region_end0": 19436127,
+    "region_start0": 19432416,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-4bd0dd14b855",
+    "id": "ENSG00000185651.17",
+    "name": "UBE2L3",
+    "region_end0": 21624084,
+    "region_start0": 21549396,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-bf1ad45f03a5",
+    "id": "ENSG00000185686.18",
+    "name": "PRAME",
+    "region_end0": 22559411,
+    "region_start0": 22547650,
+    "split": "test",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-678efab25380",
+    "id": "ENSG00000185721.15",
+    "name": "DRG1",
+    "region_end0": 31528790,
+    "region_start0": 31399509,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-9429e3d1ce06",
+    "id": "ENSG00000185838.15",
+    "name": "GNB1L",
+    "region_end0": 19854989,
+    "region_start0": 19783172,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-25db2c5a222d",
+    "id": "ENSG00000186575.21",
+    "name": "NF2",
+    "region_end0": 29698648,
+    "region_start0": 29603495,
+    "split": "test",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-e440a944af69",
+    "id": "ENSG00000186654.22",
+    "name": "PRR5",
+    "region_end0": 44737731,
+    "region_start0": 44668496,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-dd2885da26ee",
+    "id": "ENSG00000186716.22",
+    "name": "BCR",
+    "region_end0": 23318087,
+    "region_start0": 23179653,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-96c574edcf3b",
+    "id": "ENSG00000186732.15",
+    "name": "MPPED1",
+    "region_end0": 43507900,
+    "region_start0": 43411145,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-2a519d0dfd2b",
+    "id": "ENSG00000186951.18",
+    "name": "PPARA",
+    "region_end0": 46243805,
+    "region_start0": 46149873,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-97c8a44719d6",
+    "id": "ENSG00000186976.16",
+    "name": "EFCAB6",
+    "region_end0": 43812387,
+    "region_start0": 43528693,
+    "split": "test",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-790e08b71e74",
+    "id": "ENSG00000186998.17",
+    "name": "EMID1",
+    "region_end0": 29259648,
+    "region_start0": 29205758,
+    "split": "test",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-89ebad5ea4f3",
+    "id": "ENSG00000187051.10",
+    "name": "RPS19BP1",
+    "region_end0": 39532817,
+    "region_start0": 39529037,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-672dc3d2a435",
+    "id": "ENSG00000187792.6",
+    "name": "ZNF70",
+    "region_end0": 23751780,
+    "region_start0": 23738631,
+    "split": "validation",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-25b109751f88",
+    "id": "ENSG00000187860.12",
+    "name": "CCDC157",
+    "region_end0": 30378723,
+    "region_start0": 30356584,
+    "split": "test",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-22c5e56102ea",
+    "id": "ENSG00000187905.11",
+    "name": "LRRC74B",
+    "region_end0": 21064218,
+    "region_start0": 21045895,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-0ba03d09c4f8",
+    "id": "ENSG00000188064.10",
+    "name": "WNT7B",
+    "region_end0": 45977212,
+    "region_start0": 45920315,
+    "split": "test",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-d7d53a3db06b",
+    "id": "ENSG00000188130.15",
+    "name": "MAPK12",
+    "region_end0": 50261784,
+    "region_start0": 50245399,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-72821d69360f",
+    "id": "ENSG00000188263.11",
+    "name": "IL17REL",
+    "region_end0": 50012815,
+    "region_start0": 49991760,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-bb9625c2505a",
+    "id": "ENSG00000188636.4",
+    "name": "RTL6",
+    "region_end0": 44498283,
+    "region_start0": 44492532,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-2ec010547a27",
+    "id": "ENSG00000188677.15",
+    "name": "PARVB",
+    "region_end0": 44172989,
+    "region_start0": 43999160,
+    "split": "test",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-e09c6b944a54",
+    "id": "ENSG00000189269.13",
+    "name": "DRICH1",
+    "region_end0": 23632371,
+    "region_start0": 23608401,
+    "split": "validation",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-a13671fa9a4e",
+    "id": "ENSG00000189306.13",
+    "name": "RRP7A",
+    "region_end0": 42519903,
+    "region_start0": 42507931,
+    "split": "test",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-27a735dd8d12",
+    "id": "ENSG00000196236.14",
+    "name": "XPNPEP3",
+    "region_end0": 40932865,
+    "region_start0": 40857026,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-65f425cc0fbe",
+    "id": "ENSG00000196419.14",
+    "name": "XRCC6",
+    "region_end0": 41664137,
+    "region_start0": 41620735,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-6b350992a8c4",
+    "id": "ENSG00000196431.4",
+    "name": "CRYBA4",
+    "region_end0": 26630719,
+    "region_start0": 26621912,
+    "split": "test",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-752e03f611c6",
+    "id": "ENSG00000196576.17",
+    "name": "PLXNB2",
+    "region_end0": 50307745,
+    "region_start0": 50274927,
+    "split": "validation",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-1a196e292f35",
+    "id": "ENSG00000196588.21",
+    "name": "MRTFA",
+    "region_end0": 40636769,
+    "region_start0": 40410230,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-879096b10374",
+    "id": "ENSG00000198062.16",
+    "name": "POTEH",
+    "region_end0": 15721681,
+    "region_start0": 15689975,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-678efab25380",
+    "id": "ENSG00000198089.17",
+    "name": "SFI1",
+    "region_end0": 31618638,
+    "region_start0": 31488637,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-a56df9058c9d",
+    "id": "ENSG00000198125.14",
+    "name": "MB",
+    "region_end0": 35638001,
+    "region_start0": 35606713,
+    "split": "validation",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-49429fc9c372",
+    "id": "ENSG00000198355.6",
+    "name": "PIM3",
+    "region_end0": 49964125,
+    "region_start0": 49960412,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-020c9a9bfb58",
+    "id": "ENSG00000198792.14",
+    "name": "TMEM184B",
+    "region_end0": 38273855,
+    "region_start0": 38219239,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-c0c411f30a2e",
+    "id": "ENSG00000198832.11",
+    "name": "SELENOM",
+    "region_end0": 31120119,
+    "region_start0": 31104721,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-5528e88fa07f",
+    "id": "ENSG00000198911.14",
+    "name": "SREBF2",
+    "region_end0": 41907358,
+    "region_start0": 41833048,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-3b43e80ab41b",
+    "id": "ENSG00000198951.13",
+    "name": "NAGA",
+    "region_end0": 42071248,
+    "region_start0": 42058283,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-d6b2e4483012",
+    "id": "ENSG00000205560.15",
+    "name": "CPT1B",
+    "region_end0": 50578731,
+    "region_start0": 50568805,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-2503f4d4f29f",
+    "id": "ENSG00000205593.13",
+    "name": "DENND6B",
+    "region_end0": 50327571,
+    "region_start0": 50308979,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-72c625561551",
+    "id": "ENSG00000205643.12",
+    "name": "CDPF1",
+    "region_end0": 46250361,
+    "region_start0": 46243960,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-f72ba5650766",
+    "id": "ENSG00000205702.13",
+    "name": "CYP2D7",
+    "region_end0": 42149550,
+    "region_start0": 42140152,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-c7463658f357",
+    "id": "ENSG00000205704.10",
+    "name": "SMIM45",
+    "region_end0": 41958992,
+    "region_start0": 41947127,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-11b22372c84d",
+    "id": "ENSG00000205856.4",
+    "name": "C22orf42",
+    "region_end0": 32159372,
+    "region_start0": 32148955,
+    "split": "test",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-8e51208ed7f5",
+    "id": "ENSG00000206069.8",
+    "name": "LHFPL7",
+    "region_end0": 24946745,
+    "region_start0": 24935047,
+    "split": "validation",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-4bbc6a53c301",
+    "id": "ENSG00000206140.12",
+    "name": "TMEM191C",
+    "region_end0": 21471319,
+    "region_start0": 21466372,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-0df29c00f0f2",
+    "id": "ENSG00000213923.14",
+    "name": "CSNK1E",
+    "region_end0": 38320094,
+    "region_start0": 38290640,
+    "split": "validation",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-4c5d2c09d8d5",
+    "id": "ENSG00000214491.9",
+    "name": "SEC14L6",
+    "region_end0": 30546791,
+    "region_start0": 30522748,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-9429e3d1ce06",
+    "id": "ENSG00000215012.9",
+    "name": "RTL10",
+    "region_end0": 19854946,
+    "region_start0": 19846087,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-5c169ea22a91",
+    "id": "ENSG00000215193.15",
+    "name": "PEX26",
+    "region_end0": 18105446,
+    "region_start0": 18077872,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-c9d89052f383",
+    "id": "ENSG00000215568.9",
+    "name": "GAB4",
+    "region_end0": 17008272,
+    "region_start0": 16961885,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-cad1c638c3db",
+    "id": "ENSG00000217442.4",
+    "name": "SYCE3",
+    "region_end0": 50562969,
+    "region_start0": 50551061,
+    "split": "test",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-efa121ce937b",
+    "id": "ENSG00000219438.10",
+    "name": "TAFA5",
+    "region_end0": 48850962,
+    "region_start0": 48489380,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-1719a8981192",
+    "id": "ENSG00000221963.7",
+    "name": "APOL6",
+    "region_end0": 35668454,
+    "region_start0": 35648335,
+    "split": "validation",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-409bb7ea17c8",
+    "id": "ENSG00000225528.4",
+    "name": "TMA7B",
+    "region_end0": 39964955,
+    "region_start0": 39960346,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-a6e2fcab9444",
+    "id": "ENSG00000234965.3",
+    "name": "SHISA8",
+    "region_end0": 41915124,
+    "region_start0": 41909492,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-994620515bba",
+    "id": "ENSG00000235568.8",
+    "name": "NFAM1",
+    "region_end0": 42432453,
+    "region_start0": 42380356,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-5cf192a1bec2",
+    "id": "ENSG00000239282.9",
+    "name": "CASTOR1",
+    "region_end0": 30289744,
+    "region_start0": 30285063,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-2056813b4cb7",
+    "id": "ENSG00000239713.10",
+    "name": "APOBEC3G",
+    "region_end0": 39087793,
+    "region_start0": 39077008,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-1a196e292f35",
+    "id": "ENSG00000239900.15",
+    "name": "ADSL",
+    "region_end0": 40390513,
+    "region_start0": 40346410,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-6e9a003e6e86",
+    "id": "ENSG00000240972.3",
+    "name": "MIF",
+    "region_end0": 23895277,
+    "region_start0": 23894321,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-c38ddeadb094",
+    "id": "ENSG00000241360.2",
+    "name": "PDXP",
+    "region_end0": 37666982,
+    "region_start0": 37658672,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-e440a944af69",
+    "id": "ENSG00000241484.11",
+    "name": "ARHGAP8",
+    "region_end0": 44862838,
+    "region_start0": 44752496,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-678efab25380",
+    "id": "ENSG00000241878.13",
+    "name": "PISD",
+    "region_end0": 31662289,
+    "region_start0": 31618438,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-4025c3460e22",
+    "id": "ENSG00000241973.12",
+    "name": "PI4KA",
+    "region_end0": 20859467,
+    "region_start0": 20707640,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-f67031e0e629",
+    "id": "ENSG00000242114.7",
+    "name": "MTFP1",
+    "region_end0": 30429104,
+    "region_start0": 30425572,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-b62d87a98dc0",
+    "id": "ENSG00000242247.12",
+    "name": "ARFGAP3",
+    "region_end0": 42858156,
+    "region_start0": 42796451,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-745ab5c1fb6f",
+    "id": "ENSG00000242259.10",
+    "name": "C22orf39",
+    "region_end0": 19447761,
+    "region_start0": 19351317,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-45b0a4cb6125",
+    "id": "ENSG00000243156.9",
+    "name": "MICAL3",
+    "region_end0": 18024611,
+    "region_start0": 17787598,
+    "split": "validation",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-bff4d3c4601f",
+    "id": "ENSG00000243811.13",
+    "name": "APOBEC3D",
+    "region_end0": 39033327,
+    "region_start0": 39021062,
+    "split": "test",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-144391448085",
+    "id": "ENSG00000244486.10",
+    "name": "SCARF2",
+    "region_end0": 20437994,
+    "region_start0": 20424533,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-d47cf6768cd0",
+    "id": "ENSG00000244752.4",
+    "name": "CRYBB2",
+    "region_end0": 25231920,
+    "region_start0": 25212513,
+    "split": "test",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-e440a944af69",
+    "id": "ENSG00000248405.10",
+    "name": "PRR5-ARHGAP8",
+    "region_end0": 44862756,
+    "region_start0": 44702182,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-5cf192a1bec2",
+    "id": "ENSG00000248751.6",
+    "name": "ENSG00000248751",
+    "region_end0": 30299532,
+    "region_start0": 30285187,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-f67031e0e629",
+    "id": "ENSG00000249590.7",
+    "name": "ENSG00000249590",
+    "region_end0": 30429040,
+    "region_start0": 30409204,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-ae71baea8d9a",
+    "id": "ENSG00000250479.10",
+    "name": "CHCHD10",
+    "region_end0": 23768032,
+    "region_start0": 23765783,
+    "split": "test",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-2a20ee4e5b73",
+    "id": "ENSG00000251322.12",
+    "name": "SHANK3",
+    "region_end0": 50733262,
+    "region_start0": 50674357,
+    "split": "validation",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-6e9a003e6e86",
+    "id": "ENSG00000251357.4",
+    "name": "ENSG00000251357",
+    "region_end0": 23895273,
+    "region_start0": 23862137,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-4ef39a449a40",
+    "id": "ENSG00000253352.10",
+    "name": "TUG1",
+    "region_end0": 30979445,
+    "region_start0": 30969194,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-d6b2e4483012",
+    "id": "ENSG00000254413.8",
+    "name": "CHKB-CPT1B",
+    "region_end0": 50583015,
+    "region_start0": 50568818,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-6012917a6ac9",
+    "id": "ENSG00000254709.8",
+    "name": "IGLL5",
+    "region_end0": 22896161,
+    "region_start0": 22887729,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-9323cf78a4ec",
+    "id": "ENSG00000258555.6",
+    "name": "SPECC1L-ADORA2A",
+    "region_end0": 24442406,
+    "region_start0": 24270847,
+    "split": "validation",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-73af7fc64938",
+    "id": "ENSG00000273899.6",
+    "name": "NOL12",
+    "region_end0": 37693526,
+    "region_start0": 37681622,
+    "split": "validation",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-6ccab8111651",
+    "id": "ENSG00000274252.2",
+    "name": "GGTLC3",
+    "region_end0": 18518211,
+    "region_start0": 18516287,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-8642df077197",
+    "id": "ENSG00000275004.4",
+    "name": "ZNF280B",
+    "region_end0": 22508792,
+    "region_start0": 22484370,
+    "split": "test",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-0fc3994b125a",
+    "id": "ENSG00000276950.6",
+    "name": "GSTT4",
+    "region_end0": 24005503,
+    "region_start0": 23998350,
+    "split": "validation",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-7c3da1e7c65b",
+    "id": "ENSG00000278195.3",
+    "name": "SSTR3",
+    "region_end0": 37212527,
+    "region_start0": 37204186,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-cf562151954f",
+    "id": "ENSG00000278558.6",
+    "name": "TMEM191B",
+    "region_end0": 18530623,
+    "region_start0": 18527751,
+    "split": "validation",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-5ec859575985",
+    "id": "ENSG00000283809.1",
+    "name": "ENSG00000283809",
+    "region_end0": 18947782,
+    "region_start0": 18906187,
+    "split": "validation",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-0df29c00f0f2",
+    "id": "ENSG00000283900.1",
+    "name": "TPTEP2-CSNK1E",
+    "region_end0": 38398572,
+    "region_start0": 38291867,
+    "split": "validation",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-49d27da27fa3",
+    "id": "ENSG00000284130.2",
+    "name": "TUBA3FP",
+    "region_end0": 21014342,
+    "region_start0": 21008142,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-a9a099e6a9e0",
+    "id": "ENSG00000284194.4",
+    "name": "SCO2",
+    "region_end0": 50526511,
+    "region_start0": 50523513,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-1a196e292f35",
+    "id": "ENSG00000284431.1",
+    "name": "ENSG00000284431",
+    "region_end0": 40410104,
+    "region_start0": 40346478,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-bff4d3c4601f",
+    "id": "ENSG00000284554.2",
+    "name": "ENSG00000284554",
+    "region_end0": 39033326,
+    "region_start0": 39014312,
+    "split": "test",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-27d2f7e2ca0d",
+    "id": "ENSG00000284874.1",
+    "name": "ENSG00000284874",
+    "region_end0": 19724822,
+    "region_start0": 19717169,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-c38ddeadb094",
+    "id": "ENSG00000285304.1",
+    "name": "ENSG00000285304",
+    "region_end0": 37666982,
+    "region_start0": 37639642,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-afd38e00e0f0",
+    "id": "ENSG00000285404.1",
+    "name": "ENSG00000285404",
+    "region_end0": 31956293,
+    "region_start0": 31754848,
+    "split": "validation",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-a2a6c22e1a9a",
+    "id": "ENSG00000286025.2",
+    "name": "FAM246C",
+    "region_end0": 19031292,
+    "region_start0": 19029473,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-d862e3b8bc72",
+    "id": "ENSG00000286070.2",
+    "name": "ENSG00000286070",
+    "region_end0": 24629037,
+    "region_start0": 24555956,
+    "split": "train",
+    "strand": "+"
+  },
+  {
+    "group_id": "G-27a8ec29ead4",
+    "id": "ENSG00000289517.1",
+    "name": "ENSG00000289517",
+    "region_end0": 42627738,
+    "region_start0": 42583785,
+    "split": "train",
+    "strand": "-"
+  },
+  {
+    "group_id": "G-49d27da27fa3",
+    "id": "ENSG00000291240.1",
+    "name": "ENSG00000291240",
+    "region_end0": 21032622,
+    "region_start0": 21008196,
+    "split": "train",
+    "strand": "-"
+  }
+]
