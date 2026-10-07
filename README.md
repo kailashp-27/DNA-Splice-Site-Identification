@@ -1,91 +1,81 @@
 # EcoSplice
 
-A React dashboard for the first software demonstration of **Energy-Optimized DNA Splice Site Identification**, a Design and Analysis of Algorithms course project.
+A DNA sequence analysis dashboard for **Energy-Optimized DNA Splice Site Identification**, a Design and Analysis of Algorithms course project.
 
-## Completion work
+The current version lets you inspect a sequence, find canonical GT/AG motifs, and explore how candidate filtering affects a model of processing work. It includes Python scripts for preparing a labelled chromosome 22 dataset. A trained prediction model is still to be added.
 
-The remaining work is organised into five parts in [IMPLEMENTATION_PLAN.md](docs/IMPLEMENTATION_PLAN.md): dataset/coordinates; models/algorithms; backend/history; UI/measurements; release/submission.
+## Run the dashboard
 
-Part 1 adds Python data preparation alongside the existing React interface. Its source selection, window rules, coordinate mapping and leakage controls are documented in [docs/DATASET_AND_COORDINATES.md](docs/DATASET_AND_COORDINATES.md). These utilities do not yet add model scores to the dashboard.
+Use Node.js 20.19+ or 22.12+. Run from the repository root:
 
-```powershell
-python scripts/data/download_reference.py
-python scripts/data/prepare_dataset.py
-python -m unittest discover -s backend/tests -p "test_*.py" -v
-```
-
-Use Python 3.12. The data scripts require no third-party Python packages. Downloading the frozen GENCODE v49 annotation and GRCh38 chromosome 22 requires internet once; preparation uses cached files. Windows' bundled curl is used for robust downloads when available. Generated real FASTA examples live in `data/demo`; the current upload flow can scan their motifs without inventing prediction scores. Ground-truth labels and genomic provenance are stored separately in `data/processed/demo_samples.json`.
-
-## Project folders
-
-```text
-frontend/             React source, public assets, HTML entry, JavaScript tests
-backend/              Python analysis package and Python tests
-scripts/data/         Reference downloads and dataset preparation
-data/demo/            Real FASTA examples for offline demonstrations
-data/processed/       Frozen labelled dataset, manifests and verification
-data/raw/             Download cache (local only)
-docs/                 Implementation plan, methods and folder guide
-qa/screenshots/       Interface evidence (local only)
-qa/experiments/       Regeneration and QA outputs (local only)
-```
-
-Run commands from the project root. `README.md` is the setup guide; `PROJECT_HANDOVER.md` is the continuation guide. Root npm/Vite configuration and `start-dashboard.cmd` launch the interface in `frontend/`. `node_modules/` and `dist/` are generated folders. See [PROJECT_STRUCTURE.md](docs/PROJECT_STRUCTURE.md) for where to put future work.
-
-## Run locally
-
-Requirements: Node.js 20.19+ or 22.12+ and npm.
-
-```powershell
+```bash
 npm install
 npm run dev
 ```
 
-Open http://127.0.0.1:5173. After dependencies are installed, you can also double-click `start-dashboard.cmd` to launch the app. The application does not need a Python service for this first version.
+Open [127.0.0.1:5173](http://127.0.0.1:5173). No Python server is needed for the dashboard. On Windows, `start-dashboard.cmd` also launches it once dependencies are installed.
 
-If your Windows npm command points to a broken global installation, use the npm CLI bundled with Node:
+Load a built-in sample, paste DNA, or upload a single FASTA record. Custom input supports up to 100,000 bases. `N` is accepted as an unknown base; invalid characters remain visible in the quality report and block scanning until corrected. Analysis requires at least 20 called bases.
 
-```powershell
-node 'C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js' install
-node 'C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js' run dev
+## Dashboard pages
+
+| Page | What it shows |
+| --- | --- |
+| Analyse | A linked candidate map, base viewer, results table, and sequence quality checks |
+| Validate | Threshold filtering and confusion-matrix metrics on 200 constructed records |
+| Compare | Operation models, illustrative timings, and adjustable energy/carbon assumptions |
+| Reports | CSV and JSON exports, plus a printable report |
+| Help & methods | Input guidance, biology background, and analysis scope |
+
+## Reading the results
+
+Custom sequences are scanned for every forward-sequence `GT` and `AG` occurrence. A motif is a candidate, not proof that a splice site is used. These results have no model score or measured runtime.
+
+Positions are **1-based starts of the two-letter motif in the loaded sample**. They are not genomic coordinates or inferred exon boundaries. The browser scanner does not inspect the reverse complement, pair introns, detect noncanonical sites, or predict variant effects and cryptic-site activity.
+
+The built-in sequences, candidate scores, validation labels, and timing snapshots are demonstration fixtures. Their metrics describe those fixtures, not the prepared biological dataset. Scores are not calibrated probabilities.
+
+Energy is calculated as `assumed power × illustrative runtime`. Carbon uses an editable hypothetical grid factor. The dashboard does not measure device energy or demonstrate measured hardware savings.
+
+The operation comparison is `O(n × w)` versus `O(n + k × w)`: n is sequence length, w is context width, and k is the number of motif candidates. With fixed w, both are O(n). Filtering reduces the detailed work and restricts coverage to canonical motifs.
+
+## Prepare the reference dataset
+
+Use Python 3.12. The scripts use the standard library and need internet for the first reference download:
+
+```bash
+python scripts/data/download_reference.py
+python scripts/data/prepare_dataset.py
+python -m unittest discover -s backend/tests -p 'test_*.py' -v
 ```
 
-## Included pages
+The references are GENCODE v49 annotations and GRCh38 chromosome 22. Downloaded files are cached in `data/raw/`; preparation can then run offline.
 
-- **Analyse:** a linked candidate map, DNA base viewer, searchable results, and selected-site details. Select a marker, highlighted motif, or table row to inspect the same candidate across all views. Browse sequence regions or jump to a base position.
-- **Data quality tab:** alphabet checks, unknown bases, GC content, and base composition within Analyse.
-- **Validate:** a threshold-dependent confusion matrix, precision, recall, F1, and accuracy calculated on 200 constructed records.
-- **Compare:** processing schematics, cost models, hardcoded timing snapshots, and adjustable energy/carbon assumptions.
-- **Reports:** complete CSV/JSON downloads and a printable report that can be saved as PDF.
-- **Help & methods:** introductory biology, input instructions, analysis scope, and reference links.
+Prepared output includes 102-base windows, train/validation/test memberships, provenance, and verification records in `data/processed/`. The preparation groups overlapping gene spans and controls duplicate contexts across splits. This remains a single-chromosome dataset with sampled negatives, not a genome-wide evaluation.
 
-Use **Try a sample**, **Paste DNA**, or **Upload FASTA** to load a sequence. The active-sequence dropdown switches directly between the three synthetic samples. Custom inputs support up to 100,000 bases. Invalid characters stay visible in the quality report; motif scanning is blocked until alphabet and minimum-length checks pass. `N` is accepted as an unknown base.
+Real FASTA examples are in `data/demo/`, with labels and provenance in `data/processed/demo_samples.json`. They can be uploaded for motif scanning, but their dataset labels are not connected to trained dashboard predictions.
 
-## What is real and what is illustrative
+## Development
 
-Input parsing, quality statistics, canonical motif scanning, threshold filtering, evaluation arithmetic, energy conversion, and local file exports run in the browser.
-
-Built-in DNA sequences are artificial. Their listed candidates and 0–1 scores are constructed fixtures. Additional GT/AG motifs can occur in those sequences. Runtime snapshots are hardcoded. Validation labels are also constructed; the resulting metrics describe only that fixture.
-
-Custom sequences receive every forward-sequence GT/AG motif occurrence, with no fabricated model scores or timing results. Positions are **1-based starts of the two-letter motif within the loaded sample**, not genomic coordinates or inferred exon boundaries. This version does not inspect the reverse complement, pair introns, identify noncanonical sites, predict variant effects or establish cryptic-site activity.
-
-Energy (joules) = assumed active power (watts) × illustrative runtime (seconds). Carbon uses an editable hypothetical grid factor. This prototype does not measure laptop energy, cloud costs, or energy savings on edge hardware.
-
-The algorithm page compares an operation model of `O(n × w)` against `O(n + k × w)`, where n is sequence length, w is context width, and k is the number of raw motif candidates. With fixed w, both are O(n); motif filtering reduces detailed work while restricting coverage to canonical sites.
-
-## Data handling
-
-Sequences are held in browser memory for the current session. The application does not upload them or write them into browser storage. Downloads are generated locally. Reloading resets the workspace. Fonts use system fallbacks so the application can run without a font service.
-
-## Developer commands
-
-```powershell
+```bash
 npm test
 npm run test:backend
 npm run build
 npm run preview
 ```
 
-The browser analysis utilities are in `frontend/src/lib/analysis.js`; synthetic fixtures are in `frontend/src/data.js`. Python utilities are in `backend/ecosplice/`. A later Python prediction service can replace the fixtures with model inference and measured runtime, keeping the React interface. See [PROJECT_HANDOVER.md](PROJECT_HANDOVER.md) for the verified current state, detailed completion plan, and a continuation prompt for a new chat.
+- `frontend/src/lib/analysis.js`: parsing, quality checks, motif scanning, metrics, and exports.
+- `frontend/src/data.js`: dashboard demonstration fixtures.
+- `backend/ecosplice/`: Python sequence and coordinate utilities.
+- `scripts/data/`: reference downloads and dataset preparation.
 
-Biology references: [NHGRI intron explanation](https://www.genome.gov/genetics-glossary/Intron) and [Illumina SpliceAI](https://github.com/Illumina/SpliceAI).
+Sequences stay in browser memory for the session. The dashboard does not upload or persist them, and reloading resets the workspace. Exports are generated locally.
+
+## Project notes
+
+- [Dataset and coordinate rules](docs/DATASET_AND_COORDINATES.md)
+- [Implementation plan](docs/IMPLEMENTATION_PLAN.md)
+- [Folder guide](docs/PROJECT_STRUCTURE.md)
+- [Project handover](PROJECT_HANDOVER.md)
+
+These cover the remaining model, service, evaluation, and measurement work.
