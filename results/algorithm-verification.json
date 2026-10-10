@@ -1,0 +1,1898 @@
+{
+  "schema_version": 1,
+  "model_id": "ecosplice-v1-64223ad070d6",
+  "model_manifest_sha256": "a41465929f3bb904764a002ed90acd84159be65f5847f17b105875619795d02d",
+  "dataset_fingerprint": "a884895b613c8923e41e1830c2d475377071272848f2fb4c9f24335f936c5464",
+  "repeats": 5,
+  "batch_size": 512,
+  "seed": 20261006,
+  "hardware": {
+    "os": "Windows-11-10.0.26300-SP0",
+    "cpu": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD",
+    "logical_cpu_count": 16
+  },
+  "versions": {
+    "python": "3.12.10",
+    "numpy": "2.2.6"
+  },
+  "inputs": [
+    {
+      "length": 1484,
+      "sha256": "544ba7db71b83d0b54391a6bf7c2df5b3389fc4b7929c736121fb2d82b6c84ca",
+      "results": {
+        "exhaustive": {
+          "median_ms": 11.0921,
+          "min_ms": 10.8352,
+          "max_ms": 11.7844,
+          "iqr_ms": 0.6029999999999998,
+          "raw_total_ms": [
+            10.8352,
+            11.0921,
+            10.9231,
+            11.5261,
+            11.7844
+          ],
+          "raw_stages_ms": [
+            {
+              "input_ms": 0.0522,
+              "scan_ms": 0.282,
+              "context_ms": 1.8658000000000414,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 8.0199,
+              "other_ms": 0.6152999999999587,
+              "total_ms": 10.8352
+            },
+            {
+              "input_ms": 0.0586,
+              "scan_ms": 0.2372,
+              "context_ms": 1.8728000000000353,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 8.2943,
+              "other_ms": 0.6291999999999653,
+              "total_ms": 11.0921
+            },
+            {
+              "input_ms": 0.0492,
+              "scan_ms": 0.2315,
+              "context_ms": 1.866300000000035,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 8.1359,
+              "other_ms": 0.6401999999999646,
+              "total_ms": 10.9231
+            },
+            {
+              "input_ms": 0.0591,
+              "scan_ms": 0.2366,
+              "context_ms": 1.9301000000000377,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 8.608,
+              "other_ms": 0.6922999999999622,
+              "total_ms": 11.5261
+            },
+            {
+              "input_ms": 0.0528,
+              "scan_ms": 0.2357,
+              "context_ms": 1.8933000000000373,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 9.0001,
+              "other_ms": 0.6024999999999618,
+              "total_ms": 11.7844
+            }
+          ],
+          "work": {
+            "scanned_positions": 1483,
+            "canonical_candidates": 215,
+            "context_positions_considered": 1483,
+            "eligible_candidates": 199,
+            "unscored_candidates": 16,
+            "preliminary_evaluations": 0,
+            "detailed_evaluations": 1383,
+            "preliminary_final": 0,
+            "detailed_final": 199,
+            "peak_batch_windows": 512
+          }
+        },
+        "filtered": {
+          "median_ms": 2.1353,
+          "min_ms": 2.0532,
+          "max_ms": 2.1473,
+          "iqr_ms": 0.0618000000000003,
+          "raw_total_ms": [
+            2.1473,
+            2.0782,
+            2.14,
+            2.0532,
+            2.1353
+          ],
+          "raw_stages_ms": [
+            {
+              "input_ms": 0.0665,
+              "scan_ms": 0.2393,
+              "context_ms": 0.2877000000000006,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 1.3307,
+              "other_ms": 0.2230999999999994,
+              "total_ms": 2.1473
+            },
+            {
+              "input_ms": 0.0804,
+              "scan_ms": 0.2403,
+              "context_ms": 0.2862000000000008,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 1.2487,
+              "other_ms": 0.22259999999999902,
+              "total_ms": 2.0782
+            },
+            {
+              "input_ms": 0.0787,
+              "scan_ms": 0.2405,
+              "context_ms": 0.3346000000000009,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 1.2538,
+              "other_ms": 0.23239999999999927,
+              "total_ms": 2.14
+            },
+            {
+              "input_ms": 0.0546,
+              "scan_ms": 0.238,
+              "context_ms": 0.3005000000000008,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 1.2303,
+              "other_ms": 0.22979999999999912,
+              "total_ms": 2.0532
+            },
+            {
+              "input_ms": 0.053,
+              "scan_ms": 0.238,
+              "context_ms": 0.2938000000000008,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 1.314,
+              "other_ms": 0.23649999999999904,
+              "total_ms": 2.1353
+            }
+          ],
+          "work": {
+            "scanned_positions": 1483,
+            "canonical_candidates": 215,
+            "context_positions_considered": 215,
+            "eligible_candidates": 199,
+            "unscored_candidates": 16,
+            "preliminary_evaluations": 0,
+            "detailed_evaluations": 199,
+            "preliminary_final": 0,
+            "detailed_final": 199,
+            "peak_batch_windows": 199
+          }
+        },
+        "adaptive": {
+          "median_ms": 1.2753,
+          "min_ms": 1.1678,
+          "max_ms": 1.3433,
+          "iqr_ms": 0.03330000000000011,
+          "raw_total_ms": [
+            1.2873,
+            1.2753,
+            1.1678,
+            1.3433,
+            1.254
+          ],
+          "raw_stages_ms": [
+            {
+              "input_ms": 0.0512,
+              "scan_ms": 0.2563,
+              "context_ms": 0.3465000000000007,
+              "preliminary_inference_ms": 0.2269,
+              "detailed_inference_ms": 0.1456,
+              "other_ms": 0.2607999999999995,
+              "total_ms": 1.2873
+            },
+            {
+              "input_ms": 0.0607,
+              "scan_ms": 0.2312,
+              "context_ms": 0.2873000000000008,
+              "preliminary_inference_ms": 0.2701,
+              "detailed_inference_ms": 0.1517,
+              "other_ms": 0.2742999999999993,
+              "total_ms": 1.2753
+            },
+            {
+              "input_ms": 0.0502,
+              "scan_ms": 0.2316,
+              "context_ms": 0.2873000000000008,
+              "preliminary_inference_ms": 0.2089,
+              "detailed_inference_ms": 0.1378,
+              "other_ms": 0.2519999999999991,
+              "total_ms": 1.1678
+            },
+            {
+              "input_ms": 0.082,
+              "scan_ms": 0.2525,
+              "context_ms": 0.2949000000000007,
+              "preliminary_inference_ms": 0.2981,
+              "detailed_inference_ms": 0.1517,
+              "other_ms": 0.26409999999999934,
+              "total_ms": 1.3433
+            },
+            {
+              "input_ms": 0.0666,
+              "scan_ms": 0.2313,
+              "context_ms": 0.2996000000000008,
+              "preliminary_inference_ms": 0.2618,
+              "detailed_inference_ms": 0.1435,
+              "other_ms": 0.2511999999999992,
+              "total_ms": 1.254
+            }
+          ],
+          "work": {
+            "scanned_positions": 1483,
+            "canonical_candidates": 215,
+            "context_positions_considered": 215,
+            "eligible_candidates": 199,
+            "unscored_candidates": 16,
+            "preliminary_evaluations": 199,
+            "detailed_evaluations": 20,
+            "preliminary_final": 179,
+            "detailed_final": 20,
+            "peak_batch_windows": 199
+          }
+        }
+      },
+      "baseline_filtered_max_score_difference": 0.0,
+      "repetition_method_orders": [
+        [
+          "adaptive",
+          "exhaustive",
+          "filtered"
+        ],
+        [
+          "exhaustive",
+          "filtered",
+          "adaptive"
+        ],
+        [
+          "adaptive",
+          "exhaustive",
+          "filtered"
+        ],
+        [
+          "filtered",
+          "exhaustive",
+          "adaptive"
+        ],
+        [
+          "filtered",
+          "exhaustive",
+          "adaptive"
+        ]
+      ],
+      "id": "REAL-001",
+      "source": "GENCODE v49 / GRCh38 chr22",
+      "gene_id": "ENSG00000054611.15",
+      "split": "test",
+      "strand": "+",
+      "quality": {
+        "exhaustive": {
+          "donor": {
+            "tp": 2,
+            "fp": 3,
+            "fn": 0,
+            "tn": 1478,
+            "support": 2,
+            "count": 1483,
+            "precision": 0.4,
+            "recall": 1.0,
+            "f1": 0.5714285714285715,
+            "accuracy": 0.9979770734996628,
+            "unscoreable_annotated_sites": 0
+          },
+          "acceptor": {
+            "tp": 0,
+            "fp": 1,
+            "fn": 0,
+            "tn": 1482,
+            "support": 0,
+            "count": 1483,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "accuracy": 0.9993256911665542,
+            "unscoreable_annotated_sites": 0
+          }
+        },
+        "filtered": {
+          "donor": {
+            "tp": 2,
+            "fp": 3,
+            "fn": 0,
+            "tn": 1478,
+            "support": 2,
+            "count": 1483,
+            "precision": 0.4,
+            "recall": 1.0,
+            "f1": 0.5714285714285715,
+            "accuracy": 0.9979770734996628,
+            "unscoreable_annotated_sites": 0
+          },
+          "acceptor": {
+            "tp": 0,
+            "fp": 1,
+            "fn": 0,
+            "tn": 1482,
+            "support": 0,
+            "count": 1483,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "accuracy": 0.9993256911665542,
+            "unscoreable_annotated_sites": 0
+          }
+        },
+        "adaptive": {
+          "donor": {
+            "tp": 2,
+            "fp": 1,
+            "fn": 0,
+            "tn": 1480,
+            "support": 2,
+            "count": 1483,
+            "precision": 0.6666666666666666,
+            "recall": 1.0,
+            "f1": 0.8,
+            "accuracy": 0.9993256911665542,
+            "unscoreable_annotated_sites": 0
+          },
+          "acceptor": {
+            "tp": 0,
+            "fp": 1,
+            "fn": 0,
+            "tn": 1482,
+            "support": 0,
+            "count": 1483,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "accuracy": 0.9993256911665542,
+            "unscoreable_annotated_sites": 0
+          }
+        }
+      }
+    },
+    {
+      "length": 1624,
+      "sha256": "240b97a9b2cbe1c4aa9e96335203ccef3b0dc5b5f1d3ffdecf2124ebe87b636f",
+      "results": {
+        "exhaustive": {
+          "median_ms": 11.9267,
+          "min_ms": 11.7474,
+          "max_ms": 13.3491,
+          "iqr_ms": 0.9437999999999995,
+          "raw_total_ms": [
+            12.7869,
+            13.3491,
+            11.8431,
+            11.9267,
+            11.7474
+          ],
+          "raw_stages_ms": [
+            {
+              "input_ms": 0.0597,
+              "scan_ms": 0.2596,
+              "context_ms": 2.123100000000045,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 9.5977,
+              "other_ms": 0.7467999999999542,
+              "total_ms": 12.7869
+            },
+            {
+              "input_ms": 0.0613,
+              "scan_ms": 0.2544,
+              "context_ms": 2.1826000000000434,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 9.9864,
+              "other_ms": 0.8643999999999572,
+              "total_ms": 13.3491
+            },
+            {
+              "input_ms": 0.0592,
+              "scan_ms": 0.2567,
+              "context_ms": 2.039800000000057,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 8.8433,
+              "other_ms": 0.644099999999943,
+              "total_ms": 11.8431
+            },
+            {
+              "input_ms": 0.0767,
+              "scan_ms": 0.2528,
+              "context_ms": 2.0302000000000544,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 8.8298,
+              "other_ms": 0.7371999999999446,
+              "total_ms": 11.9267
+            },
+            {
+              "input_ms": 0.0539,
+              "scan_ms": 0.2397,
+              "context_ms": 1.9372000000000522,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 8.9041,
+              "other_ms": 0.6124999999999492,
+              "total_ms": 11.7474
+            }
+          ],
+          "work": {
+            "scanned_positions": 1623,
+            "canonical_candidates": 194,
+            "context_positions_considered": 1623,
+            "eligible_candidates": 181,
+            "unscored_candidates": 13,
+            "preliminary_evaluations": 0,
+            "detailed_evaluations": 1523,
+            "preliminary_final": 0,
+            "detailed_final": 181,
+            "peak_batch_windows": 512
+          }
+        },
+        "filtered": {
+          "median_ms": 1.955,
+          "min_ms": 1.8274,
+          "max_ms": 2.2506,
+          "iqr_ms": 0.2852999999999999,
+          "raw_total_ms": [
+            2.2506,
+            2.15,
+            1.955,
+            1.8647,
+            1.8274
+          ],
+          "raw_stages_ms": [
+            {
+              "input_ms": 0.0549,
+              "scan_ms": 0.3308,
+              "context_ms": 0.2811000000000005,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 1.3599,
+              "other_ms": 0.22389999999999954,
+              "total_ms": 2.2506
+            },
+            {
+              "input_ms": 0.0874,
+              "scan_ms": 0.271,
+              "context_ms": 0.3611000000000005,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 1.1965,
+              "other_ms": 0.23399999999999954,
+              "total_ms": 2.15
+            },
+            {
+              "input_ms": 0.0586,
+              "scan_ms": 0.2575,
+              "context_ms": 0.2747000000000004,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 1.1456,
+              "other_ms": 0.21859999999999968,
+              "total_ms": 1.955
+            },
+            {
+              "input_ms": 0.0557,
+              "scan_ms": 0.2473,
+              "context_ms": 0.26770000000000044,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 1.0879,
+              "other_ms": 0.2060999999999995,
+              "total_ms": 1.8647
+            },
+            {
+              "input_ms": 0.0689,
+              "scan_ms": 0.2353,
+              "context_ms": 0.25680000000000036,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 1.0654,
+              "other_ms": 0.20099999999999962,
+              "total_ms": 1.8274
+            }
+          ],
+          "work": {
+            "scanned_positions": 1623,
+            "canonical_candidates": 194,
+            "context_positions_considered": 194,
+            "eligible_candidates": 181,
+            "unscored_candidates": 13,
+            "preliminary_evaluations": 0,
+            "detailed_evaluations": 181,
+            "preliminary_final": 0,
+            "detailed_final": 181,
+            "peak_batch_windows": 181
+          }
+        },
+        "adaptive": {
+          "median_ms": 1.3518,
+          "min_ms": 1.2433,
+          "max_ms": 1.4703,
+          "iqr_ms": 0.04200000000000004,
+          "raw_total_ms": [
+            1.3336,
+            1.3756,
+            1.4703,
+            1.3518,
+            1.2433
+          ],
+          "raw_stages_ms": [
+            {
+              "input_ms": 0.0595,
+              "scan_ms": 0.2672,
+              "context_ms": 0.29330000000000056,
+              "preliminary_inference_ms": 0.27,
+              "detailed_inference_ms": 0.1985,
+              "other_ms": 0.2450999999999992,
+              "total_ms": 1.3336
+            },
+            {
+              "input_ms": 0.068,
+              "scan_ms": 0.2868,
+              "context_ms": 0.2772000000000004,
+              "preliminary_inference_ms": 0.2733,
+              "detailed_inference_ms": 0.218,
+              "other_ms": 0.2522999999999995,
+              "total_ms": 1.3756
+            },
+            {
+              "input_ms": 0.1254,
+              "scan_ms": 0.3249,
+              "context_ms": 0.2780000000000004,
+              "preliminary_inference_ms": 0.2655,
+              "detailed_inference_ms": 0.2108,
+              "other_ms": 0.2656999999999994,
+              "total_ms": 1.4703
+            },
+            {
+              "input_ms": 0.1078,
+              "scan_ms": 0.2524,
+              "context_ms": 0.2695000000000004,
+              "preliminary_inference_ms": 0.2786,
+              "detailed_inference_ms": 0.1968,
+              "other_ms": 0.24669999999999948,
+              "total_ms": 1.3518
+            },
+            {
+              "input_ms": 0.0573,
+              "scan_ms": 0.2428,
+              "context_ms": 0.2684000000000004,
+              "preliminary_inference_ms": 0.2425,
+              "detailed_inference_ms": 0.1882,
+              "other_ms": 0.24409999999999965,
+              "total_ms": 1.2433
+            }
+          ],
+          "work": {
+            "scanned_positions": 1623,
+            "canonical_candidates": 194,
+            "context_positions_considered": 194,
+            "eligible_candidates": 181,
+            "unscored_candidates": 13,
+            "preliminary_evaluations": 181,
+            "detailed_evaluations": 27,
+            "preliminary_final": 154,
+            "detailed_final": 27,
+            "peak_batch_windows": 181
+          }
+        }
+      },
+      "baseline_filtered_max_score_difference": 0.0,
+      "repetition_method_orders": [
+        [
+          "filtered",
+          "adaptive",
+          "exhaustive"
+        ],
+        [
+          "filtered",
+          "adaptive",
+          "exhaustive"
+        ],
+        [
+          "adaptive",
+          "filtered",
+          "exhaustive"
+        ],
+        [
+          "exhaustive",
+          "adaptive",
+          "filtered"
+        ],
+        [
+          "adaptive",
+          "exhaustive",
+          "filtered"
+        ]
+      ],
+      "id": "REAL-002",
+      "source": "GENCODE v49 / GRCh38 chr22",
+      "gene_id": "ENSG00000093000.20",
+      "split": "test",
+      "strand": "+",
+      "quality": {
+        "exhaustive": {
+          "donor": {
+            "tp": 3,
+            "fp": 3,
+            "fn": 1,
+            "tn": 1616,
+            "support": 4,
+            "count": 1623,
+            "precision": 0.5,
+            "recall": 0.75,
+            "f1": 0.6,
+            "accuracy": 0.9975354282193469,
+            "unscoreable_annotated_sites": 0
+          },
+          "acceptor": {
+            "tp": 0,
+            "fp": 6,
+            "fn": 1,
+            "tn": 1616,
+            "support": 1,
+            "count": 1623,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "accuracy": 0.9956869993838571,
+            "unscoreable_annotated_sites": 1
+          }
+        },
+        "filtered": {
+          "donor": {
+            "tp": 3,
+            "fp": 3,
+            "fn": 1,
+            "tn": 1616,
+            "support": 4,
+            "count": 1623,
+            "precision": 0.5,
+            "recall": 0.75,
+            "f1": 0.6,
+            "accuracy": 0.9975354282193469,
+            "unscoreable_annotated_sites": 0
+          },
+          "acceptor": {
+            "tp": 0,
+            "fp": 6,
+            "fn": 1,
+            "tn": 1616,
+            "support": 1,
+            "count": 1623,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "accuracy": 0.9956869993838571,
+            "unscoreable_annotated_sites": 1
+          }
+        },
+        "adaptive": {
+          "donor": {
+            "tp": 2,
+            "fp": 2,
+            "fn": 2,
+            "tn": 1617,
+            "support": 4,
+            "count": 1623,
+            "precision": 0.5,
+            "recall": 0.5,
+            "f1": 0.5,
+            "accuracy": 0.9975354282193469,
+            "unscoreable_annotated_sites": 0
+          },
+          "acceptor": {
+            "tp": 0,
+            "fp": 7,
+            "fn": 1,
+            "tn": 1615,
+            "support": 1,
+            "count": 1623,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "accuracy": 0.9950708564386938,
+            "unscoreable_annotated_sites": 1
+          }
+        }
+      }
+    },
+    {
+      "length": 2402,
+      "sha256": "d5e4c56ad4a51527384ddaf4e5ac5d4c93824abaac01ec73d496b7c152a75864",
+      "results": {
+        "exhaustive": {
+          "median_ms": 17.8368,
+          "min_ms": 16.9335,
+          "max_ms": 19.4327,
+          "iqr_ms": 0.9664999999999999,
+          "raw_total_ms": [
+            17.8368,
+            17.2252,
+            19.4327,
+            18.1917,
+            16.9335
+          ],
+          "raw_stages_ms": [
+            {
+              "input_ms": 0.0711,
+              "scan_ms": 0.4312,
+              "context_ms": 2.9683000000000415,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 13.2963,
+              "other_ms": 1.0698999999999579,
+              "total_ms": 17.8368
+            },
+            {
+              "input_ms": 0.0718,
+              "scan_ms": 0.3728,
+              "context_ms": 2.8779000000000403,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 12.938500000000001,
+              "other_ms": 0.9641999999999591,
+              "total_ms": 17.2252
+            },
+            {
+              "input_ms": 0.0779,
+              "scan_ms": 0.3773,
+              "context_ms": 3.1733000000000455,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 14.5611,
+              "other_ms": 1.2430999999999557,
+              "total_ms": 19.4327
+            },
+            {
+              "input_ms": 0.0908,
+              "scan_ms": 0.4012,
+              "context_ms": 3.0251000000000237,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 13.642199999999999,
+              "other_ms": 1.0323999999999778,
+              "total_ms": 18.1917
+            },
+            {
+              "input_ms": 0.0969,
+              "scan_ms": 0.3742,
+              "context_ms": 2.8741000000000447,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 12.6359,
+              "other_ms": 0.9523999999999546,
+              "total_ms": 16.9335
+            }
+          ],
+          "work": {
+            "scanned_positions": 2401,
+            "canonical_candidates": 349,
+            "context_positions_considered": 2401,
+            "eligible_candidates": 339,
+            "unscored_candidates": 10,
+            "preliminary_evaluations": 0,
+            "detailed_evaluations": 2301,
+            "preliminary_final": 0,
+            "detailed_final": 339,
+            "peak_batch_windows": 512
+          }
+        },
+        "filtered": {
+          "median_ms": 3.1894,
+          "min_ms": 3.0104,
+          "max_ms": 3.5576,
+          "iqr_ms": 0.22829999999999995,
+          "raw_total_ms": [
+            3.1894,
+            3.0104,
+            3.3755,
+            3.5576,
+            3.1472
+          ],
+          "raw_stages_ms": [
+            {
+              "input_ms": 0.0732,
+              "scan_ms": 0.4291,
+              "context_ms": 0.4899000000000021,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 1.8197,
+              "other_ms": 0.3774999999999977,
+              "total_ms": 3.1894
+            },
+            {
+              "input_ms": 0.0706,
+              "scan_ms": 0.3568,
+              "context_ms": 0.45150000000000057,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 1.777,
+              "other_ms": 0.3544999999999998,
+              "total_ms": 3.0104
+            },
+            {
+              "input_ms": 0.1,
+              "scan_ms": 0.3988,
+              "context_ms": 0.4787000000000023,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 2.0094,
+              "other_ms": 0.38859999999999806,
+              "total_ms": 3.3755
+            },
+            {
+              "input_ms": 0.1133,
+              "scan_ms": 0.4167,
+              "context_ms": 0.5196000000000012,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 2.1041,
+              "other_ms": 0.4038999999999988,
+              "total_ms": 3.5576
+            },
+            {
+              "input_ms": 0.0856,
+              "scan_ms": 0.362,
+              "context_ms": 0.45390000000000086,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 1.8448,
+              "other_ms": 0.4008999999999996,
+              "total_ms": 3.1472
+            }
+          ],
+          "work": {
+            "scanned_positions": 2401,
+            "canonical_candidates": 349,
+            "context_positions_considered": 349,
+            "eligible_candidates": 339,
+            "unscored_candidates": 10,
+            "preliminary_evaluations": 0,
+            "detailed_evaluations": 339,
+            "preliminary_final": 0,
+            "detailed_final": 339,
+            "peak_batch_windows": 339
+          }
+        },
+        "adaptive": {
+          "median_ms": 2.1429,
+          "min_ms": 1.9729,
+          "max_ms": 2.276,
+          "iqr_ms": 0.1506000000000003,
+          "raw_total_ms": [
+            2.1429,
+            1.9729,
+            2.2006,
+            2.276,
+            2.05
+          ],
+          "raw_stages_ms": [
+            {
+              "input_ms": 0.0761,
+              "scan_ms": 0.436,
+              "context_ms": 0.48180000000000156,
+              "preliminary_inference_ms": 0.3857,
+              "detailed_inference_ms": 0.3377,
+              "other_ms": 0.4255999999999984,
+              "total_ms": 2.1429
+            },
+            {
+              "input_ms": 0.1017,
+              "scan_ms": 0.3668,
+              "context_ms": 0.49510000000000115,
+              "preliminary_inference_ms": 0.3091,
+              "detailed_inference_ms": 0.2905,
+              "other_ms": 0.40969999999999906,
+              "total_ms": 1.9729
+            },
+            {
+              "input_ms": 0.0885,
+              "scan_ms": 0.3804,
+              "context_ms": 0.4950000000000023,
+              "preliminary_inference_ms": 0.422,
+              "detailed_inference_ms": 0.3619,
+              "other_ms": 0.45279999999999787,
+              "total_ms": 2.2006
+            },
+            {
+              "input_ms": 0.0853,
+              "scan_ms": 0.4246,
+              "context_ms": 0.5183000000000013,
+              "preliminary_inference_ms": 0.4431,
+              "detailed_inference_ms": 0.347,
+              "other_ms": 0.45769999999999844,
+              "total_ms": 2.276
+            },
+            {
+              "input_ms": 0.0727,
+              "scan_ms": 0.3618,
+              "context_ms": 0.4531000000000006,
+              "preliminary_inference_ms": 0.4175,
+              "detailed_inference_ms": 0.325,
+              "other_ms": 0.4198999999999993,
+              "total_ms": 2.05
+            }
+          ],
+          "work": {
+            "scanned_positions": 2401,
+            "canonical_candidates": 349,
+            "context_positions_considered": 349,
+            "eligible_candidates": 339,
+            "unscored_candidates": 10,
+            "preliminary_evaluations": 339,
+            "detailed_evaluations": 59,
+            "preliminary_final": 280,
+            "detailed_final": 59,
+            "peak_batch_windows": 339
+          }
+        }
+      },
+      "baseline_filtered_max_score_difference": 0.0,
+      "repetition_method_orders": [
+        [
+          "filtered",
+          "adaptive",
+          "exhaustive"
+        ],
+        [
+          "adaptive",
+          "filtered",
+          "exhaustive"
+        ],
+        [
+          "filtered",
+          "adaptive",
+          "exhaustive"
+        ],
+        [
+          "filtered",
+          "adaptive",
+          "exhaustive"
+        ],
+        [
+          "exhaustive",
+          "filtered",
+          "adaptive"
+        ]
+      ],
+      "id": "REAL-003",
+      "source": "GENCODE v49 / GRCh38 chr22",
+      "gene_id": "ENSG00000099889.15",
+      "split": "test",
+      "strand": "-",
+      "quality": {
+        "exhaustive": {
+          "donor": {
+            "tp": 3,
+            "fp": 2,
+            "fn": 0,
+            "tn": 2396,
+            "support": 3,
+            "count": 2401,
+            "precision": 0.6,
+            "recall": 1.0,
+            "f1": 0.7499999999999999,
+            "accuracy": 0.9991670137442732,
+            "unscoreable_annotated_sites": 0
+          },
+          "acceptor": {
+            "tp": 2,
+            "fp": 6,
+            "fn": 2,
+            "tn": 2391,
+            "support": 4,
+            "count": 2401,
+            "precision": 0.25,
+            "recall": 0.5,
+            "f1": 0.3333333333333333,
+            "accuracy": 0.9966680549770929,
+            "unscoreable_annotated_sites": 1
+          }
+        },
+        "filtered": {
+          "donor": {
+            "tp": 3,
+            "fp": 2,
+            "fn": 0,
+            "tn": 2396,
+            "support": 3,
+            "count": 2401,
+            "precision": 0.6,
+            "recall": 1.0,
+            "f1": 0.7499999999999999,
+            "accuracy": 0.9991670137442732,
+            "unscoreable_annotated_sites": 0
+          },
+          "acceptor": {
+            "tp": 2,
+            "fp": 6,
+            "fn": 2,
+            "tn": 2391,
+            "support": 4,
+            "count": 2401,
+            "precision": 0.25,
+            "recall": 0.5,
+            "f1": 0.3333333333333333,
+            "accuracy": 0.9966680549770929,
+            "unscoreable_annotated_sites": 1
+          }
+        },
+        "adaptive": {
+          "donor": {
+            "tp": 3,
+            "fp": 4,
+            "fn": 0,
+            "tn": 2394,
+            "support": 3,
+            "count": 2401,
+            "precision": 0.42857142857142855,
+            "recall": 1.0,
+            "f1": 0.6,
+            "accuracy": 0.9983340274885465,
+            "unscoreable_annotated_sites": 0
+          },
+          "acceptor": {
+            "tp": 2,
+            "fp": 7,
+            "fn": 2,
+            "tn": 2390,
+            "support": 4,
+            "count": 2401,
+            "precision": 0.2222222222222222,
+            "recall": 0.5,
+            "f1": 0.30769230769230765,
+            "accuracy": 0.9962515618492295,
+            "unscoreable_annotated_sites": 1
+          }
+        }
+      }
+    },
+    {
+      "length": 2402,
+      "sha256": "1b31752ece5d7e3c1bcff88f9167fb6a55217f53918430c34b07b39ec3883680",
+      "results": {
+        "exhaustive": {
+          "median_ms": 18.2243,
+          "min_ms": 17.3899,
+          "max_ms": 18.436,
+          "iqr_ms": 0.6882999999999981,
+          "raw_total_ms": [
+            17.5759,
+            18.436,
+            17.3899,
+            18.2243,
+            18.2642
+          ],
+          "raw_stages_ms": [
+            {
+              "input_ms": 0.0716,
+              "scan_ms": 0.359,
+              "context_ms": 3.1085000000000322,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 12.994699999999998,
+              "other_ms": 1.0420999999999694,
+              "total_ms": 17.5759
+            },
+            {
+              "input_ms": 0.1003,
+              "scan_ms": 0.3967,
+              "context_ms": 3.0217000000000223,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 13.8532,
+              "other_ms": 1.0640999999999785,
+              "total_ms": 18.436
+            },
+            {
+              "input_ms": 0.0852,
+              "scan_ms": 0.3828,
+              "context_ms": 2.952500000000026,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 12.9786,
+              "other_ms": 0.9907999999999753,
+              "total_ms": 17.3899
+            },
+            {
+              "input_ms": 0.0796,
+              "scan_ms": 0.3719,
+              "context_ms": 2.972900000000025,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 13.735199999999999,
+              "other_ms": 1.064699999999977,
+              "total_ms": 18.2243
+            },
+            {
+              "input_ms": 0.0741,
+              "scan_ms": 0.3713,
+              "context_ms": 2.982800000000039,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 13.711500000000001,
+              "other_ms": 1.1244999999999585,
+              "total_ms": 18.2642
+            }
+          ],
+          "work": {
+            "scanned_positions": 2401,
+            "canonical_candidates": 353,
+            "context_positions_considered": 2401,
+            "eligible_candidates": 334,
+            "unscored_candidates": 19,
+            "preliminary_evaluations": 0,
+            "detailed_evaluations": 2301,
+            "preliminary_final": 0,
+            "detailed_final": 334,
+            "peak_batch_windows": 512
+          }
+        },
+        "filtered": {
+          "median_ms": 3.3225,
+          "min_ms": 3.0832,
+          "max_ms": 3.7545,
+          "iqr_ms": 0.2774000000000001,
+          "raw_total_ms": [
+            3.0832,
+            3.7545,
+            3.3225,
+            3.1199,
+            3.3973
+          ],
+          "raw_stages_ms": [
+            {
+              "input_ms": 0.0706,
+              "scan_ms": 0.4225,
+              "context_ms": 0.45760000000000073,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 1.7821,
+              "other_ms": 0.3503999999999996,
+              "total_ms": 3.0832
+            },
+            {
+              "input_ms": 0.1032,
+              "scan_ms": 0.4476,
+              "context_ms": 0.4761000000000021,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 2.1954,
+              "other_ms": 0.5321999999999982,
+              "total_ms": 3.7545
+            },
+            {
+              "input_ms": 0.0962,
+              "scan_ms": 0.3767,
+              "context_ms": 0.4760000000000024,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 1.9889,
+              "other_ms": 0.3846999999999974,
+              "total_ms": 3.3225
+            },
+            {
+              "input_ms": 0.0742,
+              "scan_ms": 0.3801,
+              "context_ms": 0.457800000000002,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 1.8505,
+              "other_ms": 0.35729999999999773,
+              "total_ms": 3.1199
+            },
+            {
+              "input_ms": 0.1328,
+              "scan_ms": 0.3989,
+              "context_ms": 0.5022000000000015,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 1.9885,
+              "other_ms": 0.37489999999999846,
+              "total_ms": 3.3973
+            }
+          ],
+          "work": {
+            "scanned_positions": 2401,
+            "canonical_candidates": 353,
+            "context_positions_considered": 353,
+            "eligible_candidates": 334,
+            "unscored_candidates": 19,
+            "preliminary_evaluations": 0,
+            "detailed_evaluations": 334,
+            "preliminary_final": 0,
+            "detailed_final": 334,
+            "peak_batch_windows": 334
+          }
+        },
+        "adaptive": {
+          "median_ms": 2.0465,
+          "min_ms": 1.9529,
+          "max_ms": 2.14,
+          "iqr_ms": 0.0043999999999999595,
+          "raw_total_ms": [
+            2.0465,
+            2.0423,
+            2.14,
+            2.0467,
+            1.9529
+          ],
+          "raw_stages_ms": [
+            {
+              "input_ms": 0.0725,
+              "scan_ms": 0.4176,
+              "context_ms": 0.4781000000000007,
+              "preliminary_inference_ms": 0.3935,
+              "detailed_inference_ms": 0.2913,
+              "other_ms": 0.3934999999999993,
+              "total_ms": 2.0465
+            },
+            {
+              "input_ms": 0.1101,
+              "scan_ms": 0.3855,
+              "context_ms": 0.48040000000000227,
+              "preliminary_inference_ms": 0.335,
+              "detailed_inference_ms": 0.2895,
+              "other_ms": 0.44179999999999775,
+              "total_ms": 2.0423
+            },
+            {
+              "input_ms": 0.0827,
+              "scan_ms": 0.3891,
+              "context_ms": 0.4809000000000022,
+              "preliminary_inference_ms": 0.4416,
+              "detailed_inference_ms": 0.335,
+              "other_ms": 0.41069999999999784,
+              "total_ms": 2.14
+            },
+            {
+              "input_ms": 0.075,
+              "scan_ms": 0.373,
+              "context_ms": 0.45630000000000187,
+              "preliminary_inference_ms": 0.4257,
+              "detailed_inference_ms": 0.3063,
+              "other_ms": 0.4103999999999981,
+              "total_ms": 2.0467
+            },
+            {
+              "input_ms": 0.104,
+              "scan_ms": 0.3776,
+              "context_ms": 0.4761000000000024,
+              "preliminary_inference_ms": 0.3049,
+              "detailed_inference_ms": 0.274,
+              "other_ms": 0.41629999999999767,
+              "total_ms": 1.9529
+            }
+          ],
+          "work": {
+            "scanned_positions": 2401,
+            "canonical_candidates": 353,
+            "context_positions_considered": 353,
+            "eligible_candidates": 334,
+            "unscored_candidates": 19,
+            "preliminary_evaluations": 334,
+            "detailed_evaluations": 53,
+            "preliminary_final": 281,
+            "detailed_final": 53,
+            "peak_batch_windows": 334
+          }
+        }
+      },
+      "baseline_filtered_max_score_difference": 0.0,
+      "repetition_method_orders": [
+        [
+          "filtered",
+          "adaptive",
+          "exhaustive"
+        ],
+        [
+          "filtered",
+          "exhaustive",
+          "adaptive"
+        ],
+        [
+          "exhaustive",
+          "filtered",
+          "adaptive"
+        ],
+        [
+          "filtered",
+          "adaptive",
+          "exhaustive"
+        ],
+        [
+          "adaptive",
+          "exhaustive",
+          "filtered"
+        ]
+      ],
+      "id": "REAL-004",
+      "source": "GENCODE v49 / GRCh38 chr22",
+      "gene_id": "ENSG00000099995.20",
+      "split": "test",
+      "strand": "-",
+      "quality": {
+        "exhaustive": {
+          "donor": {
+            "tp": 2,
+            "fp": 6,
+            "fn": 0,
+            "tn": 2393,
+            "support": 2,
+            "count": 2401,
+            "precision": 0.25,
+            "recall": 1.0,
+            "f1": 0.4,
+            "accuracy": 0.9975010412328197,
+            "unscoreable_annotated_sites": 0
+          },
+          "acceptor": {
+            "tp": 3,
+            "fp": 4,
+            "fn": 0,
+            "tn": 2394,
+            "support": 3,
+            "count": 2401,
+            "precision": 0.42857142857142855,
+            "recall": 1.0,
+            "f1": 0.6,
+            "accuracy": 0.9983340274885465,
+            "unscoreable_annotated_sites": 0
+          }
+        },
+        "filtered": {
+          "donor": {
+            "tp": 2,
+            "fp": 6,
+            "fn": 0,
+            "tn": 2393,
+            "support": 2,
+            "count": 2401,
+            "precision": 0.25,
+            "recall": 1.0,
+            "f1": 0.4,
+            "accuracy": 0.9975010412328197,
+            "unscoreable_annotated_sites": 0
+          },
+          "acceptor": {
+            "tp": 3,
+            "fp": 4,
+            "fn": 0,
+            "tn": 2394,
+            "support": 3,
+            "count": 2401,
+            "precision": 0.42857142857142855,
+            "recall": 1.0,
+            "f1": 0.6,
+            "accuracy": 0.9983340274885465,
+            "unscoreable_annotated_sites": 0
+          }
+        },
+        "adaptive": {
+          "donor": {
+            "tp": 2,
+            "fp": 4,
+            "fn": 0,
+            "tn": 2395,
+            "support": 2,
+            "count": 2401,
+            "precision": 0.3333333333333333,
+            "recall": 1.0,
+            "f1": 0.5,
+            "accuracy": 0.9983340274885465,
+            "unscoreable_annotated_sites": 0
+          },
+          "acceptor": {
+            "tp": 3,
+            "fp": 5,
+            "fn": 0,
+            "tn": 2393,
+            "support": 3,
+            "count": 2401,
+            "precision": 0.375,
+            "recall": 1.0,
+            "f1": 0.5454545454545454,
+            "accuracy": 0.9979175343606831,
+            "unscoreable_annotated_sites": 0
+          }
+        }
+      }
+    },
+    {
+      "length": 100000,
+      "sha256": "0769ac2737d2dcefe09227622cabafb7dcd61d3748b1a25831020c5daab6fd44",
+      "results": {
+        "exhaustive": {
+          "median_ms": 704.3629,
+          "min_ms": 673.5779,
+          "max_ms": 765.8559,
+          "iqr_ms": 44.851099999999974,
+          "raw_total_ms": [
+            701.7175,
+            704.3629,
+            673.5779,
+            765.8559,
+            746.5686
+          ],
+          "raw_stages_ms": [
+            {
+              "input_ms": 1.7512,
+              "scan_ms": 10.0443,
+              "context_ms": 106.20930000008836,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 556.2207000000001,
+              "other_ms": 27.491999999911513,
+              "total_ms": 701.7175
+            },
+            {
+              "input_ms": 1.6007,
+              "scan_ms": 9.281,
+              "context_ms": 106.36930000010807,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 559.4202999999998,
+              "other_ms": 27.691599999892105,
+              "total_ms": 704.3629
+            },
+            {
+              "input_ms": 1.6676,
+              "scan_ms": 9.5889,
+              "context_ms": 105.449900000096,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 529.6425999999998,
+              "other_ms": 27.22889999990423,
+              "total_ms": 673.5779
+            },
+            {
+              "input_ms": 1.6958,
+              "scan_ms": 9.2667,
+              "context_ms": 121.51609999981483,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 601.2378000000004,
+              "other_ms": 32.13950000018474,
+              "total_ms": 765.8559
+            },
+            {
+              "input_ms": 1.994,
+              "scan_ms": 11.7349,
+              "context_ms": 116.07499999999501,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 585.4317000000001,
+              "other_ms": 31.33300000000486,
+              "total_ms": 746.5686
+            }
+          ],
+          "work": {
+            "scanned_positions": 99999,
+            "canonical_candidates": 0,
+            "context_positions_considered": 99999,
+            "eligible_candidates": 0,
+            "unscored_candidates": 0,
+            "preliminary_evaluations": 0,
+            "detailed_evaluations": 99899,
+            "preliminary_final": 0,
+            "detailed_final": 0,
+            "peak_batch_windows": 512
+          }
+        },
+        "filtered": {
+          "median_ms": 11.3388,
+          "min_ms": 10.8328,
+          "max_ms": 13.5722,
+          "iqr_ms": 0.9112999999999989,
+          "raw_total_ms": [
+            10.8328,
+            10.9838,
+            11.3388,
+            11.8951,
+            13.5722
+          ],
+          "raw_stages_ms": [
+            {
+              "input_ms": 1.6574,
+              "scan_ms": 9.173,
+              "context_ms": 0.0,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 0.0,
+              "other_ms": 0.0023999999999997357,
+              "total_ms": 10.8328
+            },
+            {
+              "input_ms": 1.6134,
+              "scan_ms": 9.3592,
+              "context_ms": 0.0,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 0.0,
+              "other_ms": 0.011200000000000543,
+              "total_ms": 10.9838
+            },
+            {
+              "input_ms": 1.7301,
+              "scan_ms": 9.5999,
+              "context_ms": 0.0,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 0.0,
+              "other_ms": 0.008800000000000807,
+              "total_ms": 11.3388
+            },
+            {
+              "input_ms": 1.6742,
+              "scan_ms": 10.2167,
+              "context_ms": 0.0,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 0.0,
+              "other_ms": 0.00420000000000087,
+              "total_ms": 11.8951
+            },
+            {
+              "input_ms": 1.9929,
+              "scan_ms": 11.5726,
+              "context_ms": 0.0,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 0.0,
+              "other_ms": 0.006700000000000372,
+              "total_ms": 13.5722
+            }
+          ],
+          "work": {
+            "scanned_positions": 99999,
+            "canonical_candidates": 0,
+            "context_positions_considered": 0,
+            "eligible_candidates": 0,
+            "unscored_candidates": 0,
+            "preliminary_evaluations": 0,
+            "detailed_evaluations": 0,
+            "preliminary_final": 0,
+            "detailed_final": 0,
+            "peak_batch_windows": 0
+          }
+        },
+        "adaptive": {
+          "median_ms": 11.1308,
+          "min_ms": 11.0446,
+          "max_ms": 13.2296,
+          "iqr_ms": 0.45309999999999917,
+          "raw_total_ms": [
+            11.1308,
+            11.0446,
+            11.1094,
+            11.5625,
+            13.2296
+          ],
+          "raw_stages_ms": [
+            {
+              "input_ms": 1.7186,
+              "scan_ms": 9.4074,
+              "context_ms": 0.0,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 0.0,
+              "other_ms": 0.004799999999999471,
+              "total_ms": 11.1308
+            },
+            {
+              "input_ms": 1.6699,
+              "scan_ms": 9.371,
+              "context_ms": 0.0,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 0.0,
+              "other_ms": 0.0037000000000002586,
+              "total_ms": 11.0446
+            },
+            {
+              "input_ms": 1.7056,
+              "scan_ms": 9.3974,
+              "context_ms": 0.0,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 0.0,
+              "other_ms": 0.0064000000000010715,
+              "total_ms": 11.1094
+            },
+            {
+              "input_ms": 1.7311,
+              "scan_ms": 9.8263,
+              "context_ms": 0.0,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 0.0,
+              "other_ms": 0.0051000000000005485,
+              "total_ms": 11.5625
+            },
+            {
+              "input_ms": 1.9763,
+              "scan_ms": 11.248,
+              "context_ms": 0.0,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 0.0,
+              "other_ms": 0.005300000000000082,
+              "total_ms": 13.2296
+            }
+          ],
+          "work": {
+            "scanned_positions": 99999,
+            "canonical_candidates": 0,
+            "context_positions_considered": 0,
+            "eligible_candidates": 0,
+            "unscored_candidates": 0,
+            "preliminary_evaluations": 0,
+            "detailed_evaluations": 0,
+            "preliminary_final": 0,
+            "detailed_final": 0,
+            "peak_batch_windows": 0
+          }
+        }
+      },
+      "baseline_filtered_max_score_difference": 0.0,
+      "repetition_method_orders": [
+        [
+          "exhaustive",
+          "adaptive",
+          "filtered"
+        ],
+        [
+          "filtered",
+          "adaptive",
+          "exhaustive"
+        ],
+        [
+          "adaptive",
+          "exhaustive",
+          "filtered"
+        ],
+        [
+          "adaptive",
+          "filtered",
+          "exhaustive"
+        ],
+        [
+          "filtered",
+          "adaptive",
+          "exhaustive"
+        ]
+      ],
+      "id": "stress-motif-free",
+      "source": "Explicit synthetic stress input; no biological ground truth"
+    },
+    {
+      "length": 100000,
+      "sha256": "f0cc620d004bf2eaac8f7edb6b0ff58b154afe599d9e8937b3c16d8c52ce374c",
+      "results": {
+        "exhaustive": {
+          "median_ms": 801.6244,
+          "min_ms": 761.9503,
+          "max_ms": 838.8467,
+          "iqr_ms": 38.4686999999999,
+          "raw_total_ms": [
+            799.1144,
+            837.5831,
+            801.6244,
+            838.8467,
+            761.9503
+          ],
+          "raw_stages_ms": [
+            {
+              "input_ms": 1.777,
+              "scan_ms": 39.9718,
+              "context_ms": 120.89839999983691,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 561.6978,
+              "other_ms": 74.76940000016316,
+              "total_ms": 799.1144
+            },
+            {
+              "input_ms": 1.7997,
+              "scan_ms": 38.5399,
+              "context_ms": 128.27149999988313,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 588.6860999999999,
+              "other_ms": 80.28590000011695,
+              "total_ms": 837.5831
+            },
+            {
+              "input_ms": 1.9804,
+              "scan_ms": 41.1593,
+              "context_ms": 130.11439999991558,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 547.7282999999998,
+              "other_ms": 80.64200000008475,
+              "total_ms": 801.6244
+            },
+            {
+              "input_ms": 1.917,
+              "scan_ms": 35.1365,
+              "context_ms": 138.2207999999012,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 577.6885000000001,
+              "other_ms": 85.88390000009872,
+              "total_ms": 838.8467
+            },
+            {
+              "input_ms": 1.7768,
+              "scan_ms": 35.665,
+              "context_ms": 124.75549999987787,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 524.9635000000005,
+              "other_ms": 74.78950000012162,
+              "total_ms": 761.9503
+            }
+          ],
+          "work": {
+            "scanned_positions": 99999,
+            "canonical_candidates": 50000,
+            "context_positions_considered": 99999,
+            "eligible_candidates": 49950,
+            "unscored_candidates": 50,
+            "preliminary_evaluations": 0,
+            "detailed_evaluations": 99899,
+            "preliminary_final": 0,
+            "detailed_final": 49950,
+            "peak_batch_windows": 512
+          }
+        },
+        "filtered": {
+          "median_ms": 450.3355,
+          "min_ms": 428.8349,
+          "max_ms": 535.8589,
+          "iqr_ms": 54.432000000000016,
+          "raw_total_ms": [
+            428.8349,
+            440.7061,
+            495.1381,
+            535.8589,
+            450.3355
+          ],
+          "raw_stages_ms": [
+            {
+              "input_ms": 1.8149,
+              "scan_ms": 40.5845,
+              "context_ms": 61.55809999998197,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 266.4570999999999,
+              "other_ms": 58.42030000001813,
+              "total_ms": 428.8349
+            },
+            {
+              "input_ms": 1.948,
+              "scan_ms": 38.3412,
+              "context_ms": 60.79849999999508,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 279.8326,
+              "other_ms": 59.78580000000488,
+              "total_ms": 440.7061
+            },
+            {
+              "input_ms": 1.8077,
+              "scan_ms": 39.841,
+              "context_ms": 67.3391999999689,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 314.48320000000007,
+              "other_ms": 71.66700000003107,
+              "total_ms": 495.1381
+            },
+            {
+              "input_ms": 2.1001,
+              "scan_ms": 43.0649,
+              "context_ms": 75.01729999998629,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 339.1784999999999,
+              "other_ms": 76.49810000001378,
+              "total_ms": 535.8589
+            },
+            {
+              "input_ms": 1.8194,
+              "scan_ms": 36.9248,
+              "context_ms": 64.53719999998455,
+              "preliminary_inference_ms": 0.0,
+              "detailed_inference_ms": 279.9338,
+              "other_ms": 67.12030000001545,
+              "total_ms": 450.3355
+            }
+          ],
+          "work": {
+            "scanned_positions": 99999,
+            "canonical_candidates": 50000,
+            "context_positions_considered": 50000,
+            "eligible_candidates": 49950,
+            "unscored_candidates": 50,
+            "preliminary_evaluations": 0,
+            "detailed_evaluations": 49950,
+            "preliminary_final": 0,
+            "detailed_final": 49950,
+            "peak_batch_windows": 512
+          }
+        },
+        "adaptive": {
+          "median_ms": 204.6002,
+          "min_ms": 202.7963,
+          "max_ms": 257.9371,
+          "iqr_ms": 20.174900000000008,
+          "raw_total_ms": [
+            204.6002,
+            202.7963,
+            223.7811,
+            203.6062,
+            257.9371
+          ],
+          "raw_stages_ms": [
+            {
+              "input_ms": 2.0224,
+              "scan_ms": 35.5239,
+              "context_ms": 61.82589999999376,
+              "preliminary_inference_ms": 42.295600000000015,
+              "detailed_inference_ms": 0.0,
+              "other_ms": 62.932400000006226,
+              "total_ms": 204.6002
+            },
+            {
+              "input_ms": 1.9806,
+              "scan_ms": 38.1781,
+              "context_ms": 60.42100000000114,
+              "preliminary_inference_ms": 41.16869999999998,
+              "detailed_inference_ms": 0.0,
+              "other_ms": 61.04789999999889,
+              "total_ms": 202.7963
+            },
+            {
+              "input_ms": 2.099,
+              "scan_ms": 39.7839,
+              "context_ms": 65.48209999997111,
+              "preliminary_inference_ms": 44.80300000000001,
+              "detailed_inference_ms": 0.0,
+              "other_ms": 71.61310000002888,
+              "total_ms": 223.7811
+            },
+            {
+              "input_ms": 1.9684,
+              "scan_ms": 37.6547,
+              "context_ms": 60.34729999999992,
+              "preliminary_inference_ms": 40.47670000000001,
+              "detailed_inference_ms": 0.0,
+              "other_ms": 63.15910000000008,
+              "total_ms": 203.6062
+            },
+            {
+              "input_ms": 2.1663,
+              "scan_ms": 45.3051,
+              "context_ms": 76.48529999999622,
+              "preliminary_inference_ms": 52.94399999999998,
+              "detailed_inference_ms": 0.0,
+              "other_ms": 81.0364000000038,
+              "total_ms": 257.9371
+            }
+          ],
+          "work": {
+            "scanned_positions": 99999,
+            "canonical_candidates": 50000,
+            "context_positions_considered": 50000,
+            "eligible_candidates": 49950,
+            "unscored_candidates": 50,
+            "preliminary_evaluations": 49950,
+            "detailed_evaluations": 0,
+            "preliminary_final": 49950,
+            "detailed_final": 0,
+            "peak_batch_windows": 512
+          }
+        }
+      },
+      "baseline_filtered_max_score_difference": 0.0,
+      "repetition_method_orders": [
+        [
+          "filtered",
+          "exhaustive",
+          "adaptive"
+        ],
+        [
+          "filtered",
+          "adaptive",
+          "exhaustive"
+        ],
+        [
+          "adaptive",
+          "filtered",
+          "exhaustive"
+        ],
+        [
+          "adaptive",
+          "exhaustive",
+          "filtered"
+        ],
+        [
+          "adaptive",
+          "filtered",
+          "exhaustive"
+        ]
+      ],
+      "id": "stress-motif-rich",
+      "source": "Explicit synthetic stress input; no biological ground truth"
+    }
+  ],
+  "code_sha256": {
+    "scripts/models/verify_algorithms.py": "c947ad05e270394e3f1231b4f9db72205deb48b96ae63ac193661711b7d83a06",
+    "backend/ecosplice/algorithms.py": "c23b01f13a4b7eaf1d5794d9827651cdfda6f08c8ed84d046a3bf129af028dc3",
+    "backend/ecosplice/model.py": "ac837c8ffdb929f4c2e910b1a0b9cf686b8f3b462264279d2cdd5cb00e321a2b"
+  },
+  "timing_scope": "Input validation, scan, context preparation, feature encoding, inference and result construction. Loaded model; warm-up excluded; fresh computation every trial; shuffled order; no network/UI latency.",
+  "quality_scope": "Four held-out cropped genomic demos. Canonical annotations only; unscoreable annotated edges count as false negatives. Unannotated is not experimentally proven inactive. Sampled-window metrics remain in model-evaluation.json.",
+  "stage_scope": "Inference stages include DNA encoding and coefficient summation; context stage extracts/checks windows. Timing counters themselves add overhead.",
+  "memory_scope": "Batch window count is verified, not a measurement of resident RAM.",
+  "energy_scope": "No laptop power measurement; energy integration remains Part 4."
+}

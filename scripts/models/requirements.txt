@@ -1,0 +1,5 @@
+-r ../../backend/requirements.txt
+scipy==1.16.2
+scikit-learn==1.8.0
+threadpoolctl==3.6.0
+joblib==1.5.3

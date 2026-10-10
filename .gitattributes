@@ -3,3 +3,12 @@
 # Scientific artifacts have recorded byte-level hashes; preserve their exact bytes.
 data/processed/** -text
 data/demo/** -text
+models/** -text
+results/** -text
+
+# Preserve binary documents and images without line-ending conversion.
+*.pdf binary
+*.pptx binary
+*.npz binary
+*.jpg binary
+*.png binary

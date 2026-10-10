@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="475" height="245" preserveAspectRatio="xMinYMin meet" viewBox="0 0 475 245" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="475" height="245"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-245)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="180" width="200" height="56" style="stroke: rgb(13%,41%,30%); stroke-linecap: butt; stroke-width: 1; fill: rgb(92%,96%,93%); fill-rule: evenodd;"/>
+			<text x="55.3785" y="214" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(12%,21%,18%); stroke:none;" transform="translate(0,428) scale(1,-1)">React dashboard</text>
+			<text x="39.297250000000005" y="196" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(12%,21%,18%); stroke:none;" transform="translate(0,392) scale(1,-1)">DNA / FASTA and saved results</text>
+			<rect x="275" y="180" width="200" height="56" style="stroke: rgb(13%,41%,30%); stroke-linecap: butt; stroke-width: 1; fill: rgb(92%,96%,93%); fill-rule: evenodd;"/>
+			<text x="334.036" y="214" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(12%,21%,18%); stroke:none;" transform="translate(0,428) scale(1,-1)">FastAPI service</text>
+			<text x="330.11575" y="196" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(12%,21%,18%); stroke:none;" transform="translate(0,392) scale(1,-1)">Validation and local API</text>
+			<rect x="275" y="90" width="200" height="56" style="stroke: rgb(13%,41%,30%); stroke-linecap: butt; stroke-width: 1; fill: rgb(92%,96%,93%); fill-rule: evenodd;"/>
+			<text x="333.123" y="124" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(12%,21%,18%); stroke:none;" transform="translate(0,248) scale(1,-1)">Analysis engine</text>
+			<text x="295.6355" y="106" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(12%,21%,18%); stroke:none;" transform="translate(0,212) scale(1,-1)">Three methods and saved NumPy models</text>
+			<rect x="0" y="0" width="200" height="56" style="stroke: rgb(13%,41%,30%); stroke-linecap: butt; stroke-width: 1; fill: rgb(92%,96%,93%); fill-rule: evenodd;"/>
+			<text x="62.4075" y="34" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(12%,21%,18%); stroke:none;" transform="translate(0,68) scale(1,-1)">SQLite history</text>
+			<text x="28.901750000000007" y="16" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(12%,21%,18%); stroke:none;" transform="translate(0,32) scale(1,-1)">Scientific snapshots and comparisons</text>
+			<rect x="275" y="0" width="200" height="56" style="stroke: rgb(13%,41%,30%); stroke-linecap: butt; stroke-width: 1; fill: rgb(92%,96%,93%); fill-rule: evenodd;"/>
+			<text x="333.4365" y="34" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(12%,21%,18%); stroke:none;" transform="translate(0,68) scale(1,-1)">Report renderer</text>
+			<text x="318.7895" y="16" style="font-family: Helvetica; font-size: 8.5px;fill: rgb(12%,21%,18%); stroke:none;" transform="translate(0,32) scale(1,-1)">CSV / JSON / printable HTML</text>
+			<path d="M 200,208 L 275,208 Z" style="stroke: rgb(13%,41%,30%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<polygon points="275 208, 268 204, 268 212" style="stroke: rgb(13%,41%,30%); stroke-linecap: butt; stroke-width: 1; fill: rgb(13%,41%,30%); fill-rule: evenodd;"/>
+			<path d="M 375,180 L 375,146 Z" style="stroke: rgb(13%,41%,30%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<polygon points="375 146, 371 153, 379 153" style="stroke: rgb(13%,41%,30%); stroke-linecap: butt; stroke-width: 1; fill: rgb(13%,41%,30%); fill-rule: evenodd;"/>
+			<path d="M 375,90 L 375,56 Z" style="stroke: rgb(13%,41%,30%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<polygon points="375 56, 371 63, 379 63" style="stroke: rgb(13%,41%,30%); stroke-linecap: butt; stroke-width: 1; fill: rgb(13%,41%,30%); fill-rule: evenodd;"/>
+			<path d="M 100,28 L 275,28 Z" style="stroke: rgb(13%,41%,30%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<polygon points="275 28, 268 24, 268 32" style="stroke: rgb(13%,41%,30%); stroke-linecap: butt; stroke-width: 1; fill: rgb(13%,41%,30%); fill-rule: evenodd;"/>
+			<path d="M 275,118 L 100,118 Z" style="stroke: rgb(13%,41%,30%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<path d="M 100,118 L 100,56 Z" style="stroke: rgb(13%,41%,30%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<polygon points="100 56, 96 63, 104 63" style="stroke: rgb(13%,41%,30%); stroke-linecap: butt; stroke-width: 1; fill: rgb(13%,41%,30%); fill-rule: evenodd;"/>
+			<text x="207.96575" y="228" style="font-family: Times-Roman; font-size: 8.5px;fill: rgb(12%,21%,18%); stroke:none;" transform="translate(0,456) scale(1,-1)">localhost HTTP</text>
+		</g>
+	</g>
+</svg>

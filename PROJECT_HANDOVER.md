@@ -1,10 +1,59 @@
 # EcoSplice: project handover and completion plan
 
-Updated: 6 October 2026. This file records the current state and proposed implementation plan. Future features listed here are NOT already implemented.
+Updated: 9 October 2026. All five implementation parts are complete. Historical notes and the original acceptance checklist remain below; explicitly listed future work is not implemented.
 
 ## Current continuation: five-part implementation
 
-The user's remaining work is grouped into five parts in [IMPLEMENTATION_PLAN.md](docs/IMPLEMENTATION_PLAN.md). Part 1 is the real dataset and coordinate foundation; model training is Part 2. Preserve the existing green interface and local-only scope.
+The work is grouped into five parts in [IMPLEMENTATION_PLAN.md](docs/IMPLEMENTATION_PLAN.md). All five parts are complete: real dataset/model, algorithms, service/history, dashboard/measurements, and local release/submission. Preserve the existing interface and local-only scope.
+
+### Part 5 implemented on 9 October 2026
+
+- `start-ecosplice.cmd` starts one loopback service with the built React interface and API at port 8765. `setup-ecosplice.cmd` prepares Python 3.12, the complete dependency lock and caches; a prebuilt ZIP needs no Node. Missing builds/models/dependencies and occupied ports have clear errors. Fresh extracted setup and actual offline HTTP/restart/export/100k checks use isolated history and deny outbound sockets.
+- Consolidated three stylesheets into `frontend/src/app.css`, preserving their final cascade. Updated Vite to 7.3.7 and esbuild to 0.28.1 after advisory review; npm install reported zero vulnerabilities. Chart build intermediates moved to QA. No frozen model/dataset or measurement artifacts changed.
+- Shorter headings and expandable explanations keep the green interface minimal. A visible Load → Analyse → Compare → Export path follows real completed work, including reopened comparisons. It never marks a measurement complete merely from page navigation. `guide-page.jsx` supplies concise instructions and detailed methods on demand.
+- `/api/samples/{sample_id}/fasta` downloads integrity-checked demo DNA. `data/demo/EcoSplice_test.fasta` is a byte-identical copy of REAL-003 (ARVCF, 2,402 bases). Uploads retain no invented labels. `docs/MANUAL_TESTING.md` explains the flow and expected checks.
+- Delivered seven-page `docs/submission/EcoSplice_Report.pdf`, editable report source, native 13-slide `EcoSplice_Presentation.pptx`, architecture SVG/Mermaid, demo script and viva notes. Every report page and slide was rendered and visually reviewed; slides contain editable diagrams, tables and charts. PDF plus Markdown were selected because the bundled Windows document-rendering environment lacks LibreOffice.
+- 49 Python and 14 JavaScript tests and production build pass. Windows sandbox blocks asyncio's internal localhost socket pair; approved test/service runs resolve it. The earlier approval-review usage-limit failure recovered. Final guided UI and fresh package evidence are recorded under QA and in the release/integration docs.
+- Read `docs/LOCAL_RELEASE.md` for packaging/setup and `docs/MANUAL_TESTING.md` for user testing. No public deployment, Git commit or push was made for this work.
+
+### Part 4 implemented on 8 October 2026
+
+- Connected every React page to actual FastAPI predictions, saved held-out evaluation, repeated measurements and SQLite history. Removed fixture DNA/scores/timings/validation records; `data.js` now contains navigation only. Preserved the green interface, linked candidate explorer, QC and phone navigation.
+- Added focused API/workspace/comparison/validation/report modules. Correlation plus generation/abort checks reject stale responses; input/file reads cannot overwrite later edits. Loading, empty, offline/degraded, retry and failures are explicit, without sample fallback. Modal focus/keyboard handling and unavailable context/scorer explanations are implemented.
+- Added persisted same-input comparisons (3–7 repeated trials, one warm-up per method, shuffled sequential method order). All methods use original saved input/model/batch/settings/power; median/min/max/IQR, stages, work, annotation quality, prediction differences and provenance are saved. Original predictions/single-run timings remain unchanged. Frozen reference benchmarks require matching artifact identities.
+- Validate shows actual donor/acceptor detailed/adaptive/preliminary metrics and descriptive test curves; no input accuracy without labels. Reports reopens/renames/deletes and exports all or filtered rows from one server snapshot. Filter search/type/minimum score/predicted-only choices agree across CSV/JSON/HTML. HEAD preflight plus native HTTP downloads works in the in-app browser.
+- Development frontend is now **127.0.0.1:5188**, with Vite `/api` proxy to backend **127.0.0.1:8765**; ports 5173/5174 belonged to other apps. No public deployment. Launch the two existing scripts separately until Part 5 provides the combined production launcher.
+- All **45 Python tests**, **12 JavaScript tests** and the production build pass. Browser sample/upload/analysis/comparison/history/restart/rename/export, input/service failures, no-label handling, empty/N/edge inputs and phone layout pass. All main screens fit 390×844 without horizontal body overflow; no console warnings/errors observed.
+- A browser-driven 100,000-base synthetic GTAG stress run produced 50,000 candidates, 49,950 eligible calls and peak batch 512. Original single compute: **1165.6214 ms**. Seven-repeat medians: exhaustive **1482.9209 ms**, filtered **805.0881 ms**, adaptive **412.4652 ms**. These are synthetic stress measurements, not accuracy claims. Replacing DNA during the comparison clears the old display; completed work remains attached to the original saved run.
+- Real ARVCF (2,402 bp) three-repeat medians were **32.1583 / 6.8484 / 3.0955 ms**; adaptive avoided 280/339 detailed calls but changed three decisions and reduced this cropped sample's donor/acceptor F1. Population evaluation remains distinct.
+- Read [docs/DASHBOARD_INTEGRATION.md](docs/DASHBOARD_INTEGRATION.md) for contracts and verification. Local evidence is under `qa/experiments/part4-ui/` and `qa/screenshots/part4-*.jpg`. QA used a separate history database; do not copy test runs into ordinary history.
+- At Part 4 completion, Part 5 was still pending; it is now completed as recorded above.
+
+### Part 3 implemented on 8 October 2026
+
+- Added `backend/ecosplice/api.py`, `storage.py` and `reports.py`. FastAPI startup loads and warms saved models once; no training/download. SQLite saves complete immutable scientific snapshots with normalized DNA, provenance, quality, original model/thresholds/routes, counts, stage timing and hardware/version/code hashes. Names are independently mutable. Local database is ignored by Git.
+- APIs provide strict raw DNA/single-record FASTA predictions, verified annotated sample access, matching held-out evaluation, health/model status, paginated runs, reopen/rename/delete and CSV/JSON/printable HTML exports. Arbitrary DNA has `evaluation=null`; only explicit verified sample IDs use bundled labels. Unscored annotated edges count as false negatives. Failed real requests never receive fixture results.
+- Exports explicitly support all versus filtered scope. Filtering retains original full-computation measurements/settings, with clear selected/total counts. CSV is rectangular with metadata/candidate records and spreadsheet-safe strings. Printable HTML escapes input and uses no external assets. All formats come from the same saved snapshot.
+- Estimated energy uses actual single-run engine time times explicit assumed power (default 15 W), with units/assumptions saved. It is not laptop power measurement or repeated-benchmark evidence. Separate repeated comparisons and quality/speed views were added in Part 4.
+- `python scripts/start_backend.py`, `npm run dev:backend` and `start-backend.cmd` start a single-worker service at `127.0.0.1:8765`. Port 8000 was unavailable on this laptop. `--port`/`ECOSPLICE_PORT`, `ECOSPLICE_MODEL_DIR` and `ECOSPLICE_DB_PATH` configure launch. Missing/invalid models allow history reads while predictions fail clearly; database/inference/busy/input/size errors have consistent envelopes. Documentation/OpenAPI require no CDN assets.
+- Computation is serialized to reduce measurement contention; simultaneous analyses receive an explicit busy response. `client_request_id` echoes a frontend correlation token, not an idempotency key. Part 4 implements UI stale-response protection, cancellation/loading/error presentation.
+- All 40 Python tests (14 new API checks) and seven JavaScript tests passed. Actual HTTP process restart/reopen/rename/export/delete and occupied-port messaging passed. A synthetic 100,000-base motif-rich HTTP request yielded 50,000 candidates, 49,950 detailed evaluations, peak batch 512; saved/reopened/exported successfully. Single engine time was 845.8739 ms. QA evidence: `qa/experiments/backend-service/verification.json`. No downloads occurred; fresh offline packaging validation remains Part 5.
+- Read [docs/LOCAL_SERVICE.md](docs/LOCAL_SERVICE.md) for the current API/persistence/export contract. React integration was pending at the end of Part 3; Part 4 now supplies real results throughout.
+
+### Part 2 implemented on 7 October 2026
+
+- Saved real CPU model `ecosplice-v1-64223ad070d6` in `models/ecosplice-v1/`. It contains preliminary 22-base single-letter logistic coefficients and detailed 102-base single-letter/adjacent-pair logistic coefficients. Runtime uses only pinned NumPy; training uses pinned SciPy/sklearn/threadpoolctl.
+- `scripts/models/train_models.py` verifies frozen source hashes, fits on train only, selects thresholds/routing on validation, persists choices, and then evaluates test. Detailed validation macro F1 0.7695 exceeds short-context reference 0.6937. Fitted coefficients export to safe numeric `.npz` arrays, with sklearn prediction parity within `1e-12`.
+- Detailed canonical-candidate test F1: donor 0.7987, acceptor 0.7173. Donor precision/recall: 0.8063/0.7911; acceptor: 0.7424/0.6939. This is sampled chr22 evaluation, not genome-wide accuracy. Calibration bins/Brier scores are descriptive; displayed scores must remain model scores rather than confidence/probability claims.
+- Preliminary thresholds: donor 0.36, acceptor 0.31. Detailed thresholds: donor 0.41, acceptor 0.44. Adaptive fast bounds: donor <=0.18 or >=0.52; acceptor <=0.0775 or >=0.655. Intermediate cases call detailed; final score uses the actual final scorer's threshold.
+- Adaptive sampled test F1: donor 0.7858, acceptor 0.7238. It avoids 12,132 of 15,020 detailed evaluations (80.77%). Donor test F1 loss exceeds its validation selection tolerance; this is disclosed without tuning from test. Retain the quality/speed trade-off when presenting results.
+- `backend/ecosplice/algorithms.py` implements actual exhaustive, filtered and adaptive processing with streaming batches, stage times, work counts, input hashes and provenance. Exhaustive scores every eligible position, even on motif-free input. Filtered uses the same detailed scorer. Adaptive never calls detailed for accepted fast cases.
+- `scripts/analyze_sequence.py` loads saved artifacts and predicts from one FASTA/raw DNA file offline. It has no training/download dependency and fails clearly for invalid input/missing models. Arbitrary files receive no invented accuracy metric.
+- `scripts/models/verify_algorithms.py` warms loaded models, shuffles method order and records five fresh computations per input, with medians/spread/raw stages/counters/hardware. It also evaluates four full held-out cropped demo regions, counting unscoreable annotated edges as false negatives. Two explicit synthetic 100,000-base stress inputs pass parity and bounded-batch checks; synthetic stress has no biological accuracy claim.
+- Exhaustive/filtered canonical scores agree within `1e-12`; routing tests instrument true detailed call counts. Independent retraining produced byte-identical weights and the model manifest. All 26 Python and seven JavaScript tests passed.
+- Genuine reports are in `results/model-evaluation.json`, `algorithm-verification.json`, `demo-predictions.json` and `model-reproducibility.json`. Pseudocode, complexity, measured tables and reproduction commands are in [docs/MODELS_AND_ALGORITHMS.md](docs/MODELS_AND_ALGORITHMS.md).
+
+**Integration contract (current after Part 4):** React uses genuine service results throughout. The API now loads saved models at startup; never retrain/download there. Preserve one-based motif starts, full-context/N eligibility reasons, scorer-specific thresholds, final routes, model/dataset identity and computation timings. Adaptive routing applies to frozen thresholds; custom decision thresholds require compatible policy selection or disabling shortcuts. UI score filtering is separate from changing saved prediction decisions. SQLite/API/reports, single-run estimated energy, complete UI integration and repeated comparisons are implemented. Keep original predictions separate from attached comparison summaries.
 
 ### Folder organisation: 6 October 2026
 
@@ -12,7 +61,7 @@ Source files now live in `frontend/` and `backend/`, their tests live alongside 
 
 The frozen scientific artifacts were not rewritten during organisation. Their manifest retains the original preparation-code identities from Git commit `fadf3c6`; moving and updating current script paths changes the current code hash, not the saved dataset identity. Reproduction with the reorganised scripts should match the three derived-data file hashes; the new manifest records the current preparation code and therefore has a different fingerprint.
 
-Organisation verification passed: seven JavaScript tests, ten Python tests, production build, all three regenerated dataset hashes, and byte-for-byte preservation of the frozen scientific artifacts. Local evidence is saved in `qa/experiments/reorganization-verification.json`. Part 2 has not started.
+Organisation verification passed: seven JavaScript tests, ten Python tests, production build, all three regenerated dataset hashes, and byte-for-byte preservation of the frozen scientific artifacts. Local evidence is saved in `qa/experiments/reorganization-verification.json`. Part 2 was subsequently completed as recorded above.
 
 ### Part 1 implemented on 6 October 2026
 
@@ -28,7 +77,7 @@ Organisation verification passed: seven JavaScript tests, ten Python tests, prod
 
 Read [docs/DATASET_AND_COORDINATES.md](docs/DATASET_AND_COORDINATES.md) before implementing models. The dataset uses sampled negatives and one chromosome; it is not genome-wide validation. Full 102-base A/C/G/T windows are required for scoring. N-containing and edge windows must retain an unavailable-score reason when integrated.
 
-**Current interface remains the existing prototype.** The real FASTA files can be uploaded for genuine motif scanning, but they have no model scores yet. There is still no trained model, Python service, measured algorithm benchmark or SQLite history. The original detailed phases below remain the acceptance checklist; dataset and Python-utility work supersedes their earlier “no dataset” state. Next: Part 2 CPU model training, saved artifacts, thresholds, held-out evaluation and the three genuine processing methods.
+**Current interface is integrated with real predictions and saved reports.** Completed Parts 1–4 supersede earlier planning text. Historical notes above describe the state at each part's completion; the original phases below remain the acceptance checklist. Part 5 is now complete as recorded above.
 
 ## 1. User's intended outcome
 
@@ -38,19 +87,17 @@ The original proposal is at `D:\Works\SEM 5\DA2_Report_DAA.docx`. Treat proposal
 
 ## 2. Verified current state
 
-- Project: `D:\Projects\DNA Splice Site Identification`.
-- React 19, Vite 7, lucide-react; plain JSX and CSS. Dependencies and lockfile already exist.
-- Four main sections: Analyse, Compare, Validate, Reports. Data quality is a tab under Analyse. Help & methods is accessible in the header and desktop sidebar.
-- Green design: dark forest sidebar, pale surfaces, green donor accents and purple acceptor accents.
-- Linked candidate map, DNA letters, paginated table and selected-site inspector. Search, type filters, score threshold, base-position jump and sequence-region navigation work.
-- Three synthetic samples; single-record FASTA/TXT upload and pasted DNA input. Limit: 100,000 bases. Input permits A/C/G/T/N, preserves unsupported symbols for QC, and requires at least 20 called bases.
-- Custom input scans overlapping forward-sequence GT/AG occurrences. These receive no prediction scores.
-- Built-in candidate scores and runtime snapshots are hardcoded fixtures. Built-in candidate lists are a curated subset, not every raw motif occurrence.
-- Validate uses 200 constructed labels/scores, independent of the uploaded sequence. Its metrics are arithmetic demonstrations, not real model evaluation.
-- Energy = assumed watts times illustrative runtime in seconds; it is not a laptop power measurement.
-- CSV/JSON exports and print-to-PDF report exist. CSV includes every candidate, not only filtered rows. Current run state and export list are held only in memory and reset on reload.
-- No Python backend, trained model, database, real scheduler or experimental benchmark suite exists yet. The real labelled dataset and Python coordinate/input foundation now exist as recorded above.
-- Latest production build passed. Six analysis utility tests passed after the redesign. Browser selection, pagination, filters, empty sample, custom overlapping motifs and phone layout were checked. After the product-copy cleanup, build and navigation/help checks passed with no browser console warnings/errors observed.
+- React 19 / Vite 7 / lucide-react; Python 3.12 with pinned NumPy/FastAPI/Uvicorn; SQLite local history.
+- Analyse, Compare, Validate, Reports, QC tab and Help & methods use actual inputs, saved model results/evaluation and measured computation.
+- Four real held-out GENCODE v49 / GRCh38 chr22 demos; strict single-record FASTA/TXT/paste, 20 called bases to 100,000 total bases. Forward supplied orientation, A/C/G/T/N, one-based motif starts.
+- Every canonical motif remains visible. Full 102-base A/C/G/T windows receive actual scores; N/edge contexts retain unavailable-score reasons.
+- Three working methods: exhaustive, candidate-filtered and genuinely adaptive. Frozen scorer-specific thresholds; display filters never alter original decisions.
+- Linked, bounded map/base viewer and six-row candidate pages. Run name/method/power controls apply to new analysis and restore saved settings on reopen.
+- Validate uses matching genuine held-out records. Curves are descriptive, not test-driven threshold tuning. Arbitrary upload accuracy remains unavailable.
+- Compare warms/repeats/shuffles actual same-input computations, saves variation/work/quality/energy/provenance, and separately shows frozen multi-input experiments.
+- Reports uses SQLite, explicit full/filtered CSV/JSON/print scope, immutable scientific settings, rename/delete and reopen after restart. Normalized DNA is saved locally. No remote service receives DNA.
+- Loading/errors/empty results/offline/retry and stale-request protection work without fixture fallback. No heap scheduler is needed for the implemented adaptive policy.
+- 45 Python / 12 JavaScript tests and production build pass. Browser workflow, actual downloads/restart, 100,000-base model path and phone layout were verified. Combined packaged startup and fresh offline installation remain Part 5.
 
 ### Product cleanup already completed
 
@@ -62,15 +109,18 @@ Removed the "DAA project / Local research workspace" card, placeholder KP avatar
 | --- | --- |
 | `frontend/src/App.jsx` | Application state, navigation, sample loading, downloads, report data |
 | `frontend/src/workspace.jsx` | Sequence map, DNA viewer, linked table/inspector, input bar and workflow |
-| `frontend/src/pages.jsx` | QC, evaluation, comparison, reports, help, input dialog |
-| `frontend/src/data.js` | Synthetic sequences, fixture scores, fixture validation records |
-| `frontend/src/lib/analysis.js` | FASTA parser, QC, motif scanning, metrics, energy arithmetic, CSV |
-| `frontend/src/components.jsx` | Shared components; includes some legacy unused components |
-| `frontend/src/styles.css`, `frontend/src/redesign.css` | Original CSS plus redesign overrides |
-| `frontend/tests/` | Six utility tests plus real FASTA coordinate-flow test |
+| `frontend/src/pages.jsx` and focused page modules | QC/help/input modal, genuine comparison/validation/history screens |
+| `frontend/src/data.js` | Navigation only; no fixtures |
+| `frontend/src/lib/analysis.js`, `lib/api.js`, `useWorkspace.js` | Input QC, API errors/adapters/filters, request generation and workspace state |
+| `frontend/src/components.jsx` | Shared presentation/loading/error components |
+| `frontend/src/app.css` | Consolidated green UI, integration controls and responsive guide styling |
+| `frontend/tests/` | 12 parser/QC/API/stale-response/export/real FASTA checks |
 | `backend/ecosplice/sequence.py` | Python input, window and strand/coordinate contract |
-| `backend/tests/` | Ten coordinate, isolation and real reference-data tests |
+| `backend/tests/` | 45 scientific, service/storage/report/comparison and failure checks |
 | `scripts/data/` | Reference download and deterministic dataset preparation |
+| `backend/ecosplice/model.py`, `algorithms.py`, `evaluation.py` | Portable saved-model inference, actual methods, metrics/selection |
+| `scripts/models/`, `scripts/analyze_sequence.py` | Training, verification and offline real-prediction CLI |
+| `models/ecosplice-v1/`, `results/` | Saved model/settings and genuine experiment records |
 | `README.md` | Current setup, scope, limitations |
 | `start-dashboard.cmd` | Current frontend launcher |
 
@@ -82,13 +132,13 @@ The system npm command previously pointed to a broken roaming installation. Work
 
 ```powershell
 node node_modules/vite/bin/vite.js --host 127.0.0.1
-node --test frontend/tests/analysis.test.js frontend/tests/real-samples.test.js
+node --test frontend/tests/analysis.test.js frontend/tests/api.test.js frontend/tests/real-samples.test.js
 python -m unittest discover -s backend/tests -p "test_*.py" -v
 node node_modules/vite/bin/vite.js build
 node 'C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js' run dev
 ```
 
-Preview: `http://127.0.0.1:5173/`. An existing preview process may or may not remain running in a new chat. If browser access times out while Vite reports ready, check whether sandbox networking prevents reaching that process; the previous preview required an approved unsandboxed local server process. Do not weaken firewall or system security settings to fix this.
+Frontend: `http://127.0.0.1:5188/`. Start the backend separately with `python scripts/start_backend.py` at port 8765. An existing preview process may or may not remain running in a new chat. If browser access times out while Vite reports ready, check whether sandbox networking prevents reaching that process; the previous preview required an approved unsandboxed local server process. Do not weaken firewall or system security settings to fix this.
 
 ## 3. Recommended final scope
 
@@ -113,7 +163,7 @@ No required cloud account, login, public hosting, GPU, Jetson, NPU, IoT, federat
 
 Acceptance: regenerable dataset script, manifest with counts per class/split, no cross-split duplicates/overlaps, verified positive motif alignment, and real annotated examples in the app.
 
-Sources: [GENCODE human annotation and genome files](https://www.gencodegenes.org/human/); [scikit-learn grouped splitting](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GroupShuffleSplit.html). Exact subset/model choices are proposed, not yet fixed.
+Sources: [GENCODE human annotation and genome files](https://www.gencodegenes.org/human/); [scikit-learn grouped splitting](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GroupShuffleSplit.html). The completed Part 1 and Part 2 notes above record the frozen subset/model choices.
 
 ### Phase 2: reproducible prediction model
 
@@ -225,22 +275,22 @@ Acceptance: one launch starts a complete offline-ready demonstration after setup
 ## 5. Completion checklist
 
 - [x] Genuine annotated dataset and frozen train/validation/test partitions.
-- [ ] Saved trained model and reproducible training/evaluation scripts.
-- [ ] Real backend predictions for custom sequences.
-- [ ] Exhaustive and filtered algorithms with fair comparison and work counts.
-- [ ] Adaptive routing avoids actual detailed work and its quality trade-off is measured.
-- [ ] Measured runtime replaces hardcoded snapshots throughout the genuine result path.
-- [ ] Energy estimates use measured time and explicit assumptions.
-- [ ] Validate reflects held-out labels, never fabricated truth for arbitrary uploads.
-- [ ] All dashboard pages and exports agree on run/model/settings.
-- [ ] Saved local history survives restarting.
-- [ ] Error, loading, empty and long-input flows pass.
-- [ ] Clean green product UI and accessible navigation remain intact.
+- [x] Saved trained model and reproducible training/evaluation scripts.
+- [x] Real backend predictions for custom sequences.
+- [x] Exhaustive and filtered algorithms with fair comparison and work counts.
+- [x] Adaptive routing avoids actual detailed work and its quality trade-off is measured.
+- [x] Measured runtime replaces hardcoded snapshots throughout the genuine result path.
+- [x] Energy estimates use measured time and explicit assumptions.
+- [x] Validate reflects held-out labels, never fabricated truth for arbitrary uploads.
+- [x] All dashboard pages and exports agree on run/model/settings.
+- [x] Saved local history survives restarting.
+- [x] Error, loading, empty and long-input flows pass.
+- [x] Clean green product UI and accessible navigation remain intact.
 - [ ] Fresh setup and normal offline launch verified.
 - [ ] Submission report, slides and demonstration materials match actual features.
 
 ## 6. Suggested message for a new chat
 
-> Continue EcoSplice in `D:\Projects\DNA Splice Site Identification`. Read `PROJECT_HANDOVER.md`, `README.md`, and the current source before editing. Keep the existing green React UI. I want a finished local application to demonstrate to my professor; do not publicly deploy it. Start with the real labelled dataset, coordinate/split contract and reproducible small model, then integrate the Python backend and complete the remaining phases in the handover. Preserve working sequence/QC/export features. Use actual predictions and measured runtime; do not replace missing work with hardcoded scores, fake timing or synthetic validation claims. Keep the plan/status file updated as each phase is implemented. Explain the results and algorithm choices in beginner-friendly language.
+> Continue EcoSplice in `D:\Projects\DNA Splice Site Identification`. Read `PROJECT_HANDOVER.md`, `README.md`, and the current source before editing. Keep the existing green React UI. I want a finished local application to demonstrate to my professor; do not publicly deploy it. Parts 1–4 are complete: data/model/algorithms, backend/SQLite, genuine React integration and repeated measurements. All five parts are implemented. Read the Part 5 notes and manual testing guide, then address the user's requested follow-up. Preserve working sequence/QC/export features. Use actual predictions and measured runtime; do not replace missing work with hardcoded scores, fake timing or synthetic validation claims. Keep the plan/status file updated as each phase is implemented. Explain the results and algorithm choices in beginner-friendly language.
 
 A new chat may not have this chat's full context. This file and current source are the explicit handover; check actual files rather than assuming every planned feature exists.

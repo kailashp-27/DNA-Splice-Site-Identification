@@ -1,4 +1,6 @@
 node_modules/
+.cache/
+releases/*.zip
 dist/
 *.log
 .env.local
@@ -7,3 +9,4 @@ __pycache__/
 *.pyc
 .venv/
 data/raw/
+data/local/

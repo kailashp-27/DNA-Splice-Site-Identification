@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-07",
+  "byte_identical_retraining": {
+    "preliminary.npz": true,
+    "detailed.npz": true,
+    "manifest.json": true
+  },
+  "model_id": "ecosplice-v1-64223ad070d6",
+  "python_tests_passed": 26,
+  "training_only_train_split": true,
+  "selection_only_validation_split": true,
+  "javascript_tests_passed": 7
+}

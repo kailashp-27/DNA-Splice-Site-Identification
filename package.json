@@ -1,23 +1,32 @@
 {
   "name": "ecosplice-dashboard",
   "private": true,
-  "version": "0.1.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1",
+    "start": ".venv/Scripts/python.exe scripts/start_local.py",
+    "setup:local": "python scripts/setup_local.py",
+    "package:local": "python scripts/package_release.py",
     "test": "node --test frontend/tests/*.test.js",
     "test:backend": "python -m unittest discover -s backend/tests -p test_*.py -v",
+    "dev:backend": "python scripts/start_backend.py",
     "data:download": "python scripts/data/download_reference.py",
-    "data:prepare": "python scripts/data/prepare_dataset.py"
+    "data:prepare": "python scripts/data/prepare_dataset.py",
+    "models:train": "python scripts/models/train_models.py",
+    "models:verify": "python scripts/models/verify_algorithms.py"
   },
   "dependencies": {
     "lucide-react": "0.525.0",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
+  "overrides": {
+    "esbuild": "0.28.1"
+  },
   "devDependencies": {
-    "vite": "7.3.1"
+    "vite": "7.3.7"
   }
 }

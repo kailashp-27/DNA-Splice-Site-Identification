@@ -1,0 +1,73 @@
+{
+  "classes": [
+    "non_site",
+    "donor",
+    "acceptor"
+  ],
+  "code_sha256": {
+    "backend/ecosplice/evaluation.py": "9e638cc211335683cdde0fe1bd6d3ccd1e659392c92a024690fb98318d566e77",
+    "backend/ecosplice/model.py": "ac837c8ffdb929f4c2e910b1a0b9cf686b8f3b462264279d2cdd5cb00e321a2b",
+    "scripts/models/train_models.py": "af15e3915e3a1a8bd66664a5a620313d3bb8d7fb07930bb77d34df3dbde9af85"
+  },
+  "context_width": 102,
+  "dataset_fingerprint": "a884895b613c8923e41e1830c2d475377071272848f2fb4c9f24335f936c5464",
+  "dataset_id": "gencode49-grch38-chr22-v1",
+  "dataset_manifest_sha256": "00c26249a58a80307b1db78a0c77a8606cfeaa8c79fe8d22fb752e2ab80103bb",
+  "model_id": "ecosplice-v1-64223ad070d6",
+  "routing": {
+    "acceptor": {
+      "high": 0.655,
+      "low": 0.0775
+    },
+    "donor": {
+      "high": 0.52,
+      "low": 0.18000000000000002
+    }
+  },
+  "schema_version": 1,
+  "score_meaning": "Softmax model score under sampled training class balance; not a calibrated biological probability.",
+  "scorers": {
+    "detailed": {
+      "flank": 50,
+      "id": "detailed-lr102pairs-v1-42230d54643b",
+      "pairs": true,
+      "sha256": "3be28e97fc7edbcf58f58a018bccb4e5aa2a1a3bc24e79ef9077d6a0d5cc067c"
+    },
+    "preliminary": {
+      "flank": 10,
+      "id": "preliminary-lr22-v1-d5f039ae5fa3",
+      "pairs": false,
+      "sha256": "d362b4dfcea852c12cfd48d39dcbd4dd56893fa0bccff79e4b13befad8e6c63f"
+    }
+  },
+  "thresholds": {
+    "detailed": {
+      "acceptor": 0.44,
+      "donor": 0.41000000000000003
+    },
+    "preliminary": {
+      "acceptor": 0.31,
+      "donor": 0.36000000000000004
+    }
+  },
+  "training": {
+    "C": 1.0,
+    "class_weight": null,
+    "fit_split": "train",
+    "max_iter": 400,
+    "model_choice": "Full-window position-specific single-base and adjacent-pair logistic regression versus short-window single-base reference; retain detailed only if validation macro F1 improves.",
+    "routing_constraint": "Per type, validation F1 loss <=0.005 and recall loss <=0.01 relative to detailed; maximise avoided evaluations.",
+    "seed": 20261006,
+    "solver": "lbfgs",
+    "threads": 1,
+    "threshold_and_routing_split": "validation",
+    "tol": 1e-05
+  },
+  "versions": {
+    "numpy": "2.2.6",
+    "python": "3.12.10",
+    "scipy": "1.16.2",
+    "sklearn": "1.8.0"
+  },
+  "windows_sha256": "150eae1571670821d6d725a6d6806f76d05d1b9f840b4c1baea05444f026ed08"
+}
